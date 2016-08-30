@@ -22,17 +22,17 @@
 
 <hr size="1" />
 
+    <p align="center">
+    <b>Ticket Processed ...</b>
+    <br><br>
+      <img src="/Docs/Screenshots/03___QDisplay_Proc.jpg?raw=true" width="60%">
+    </p>
 
-<p align="center">
-<b>Ticket Processed ...</b>
-<br><br>
-  <img src="/Docs/Screenshots/03___QDisplay_Proc.jpg?raw=true" width="60%">
-</p>
+    <p align="center">
+      <img src="/Docs/Screenshots/03___Node_Processed.jpg?raw=true" width="45%">
+    </p>
 
-<p align="center">
-  <img src="/Docs/Screenshots/03___Node_Processed.jpg?raw=true" width="45%">
-</p>
-
+<hr size="1" />
 
 <p align="center">
   <img src="/Docs/Screenshots/05___Node_StartUp.jpg?raw=true" width="45%">
