@@ -12,58 +12,58 @@
 <p align="center">
   <b>Main Display and Server (QDisplay). Hosted at Raspberry Pi2 Model B</b>
   <br><br>
-  <img src="/Docs/Screenshots/IMG_20160830_071555.jpg?raw=true" width="60%">
+  <img src="/Docs/Screenshots/01___QDisplay_1Call.jpg?raw=true" width="60%">
 </p>
 
 <p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071630.jpg?raw=true" width="45%">
+  <img src="/Docs/Screenshots/01___Node_Call_1rst_Attemption.jpg?raw=true" width="45%">
 </p>
 
 
 
+<p align="center">
+<b>Ticket Processed ...</b>
+<br><br>
+  <img src="/Docs/Screenshots/03___QDisplay_Proc.jpg?raw=true" width="60%">
+</p>
 
 <p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071640.jpg?raw=true" width="60%">
+  <img src="/Docs/Screenshots/03___Node_Processed.jpg?raw=true" width="45%">
+</p>
+
+
+<p align="center">
+  <img src="/Docs/Screenshots/05___Node_StartUp.jpg?raw=true" width="45%">
+</p>
+
+
+<p align="center">
+  <img src="/Docs/Screenshots/06___Node_Login_to_AP.jpg?raw=true" width="45%">
+</p>
+
+
+<p align="center">
+  <img src="/Docs/Screenshots/06___Node_Login_to_AP_FAIL.jpg?raw=true" width="45%">
+</p>
+
+
+<p align="center">
+  <img src="/Docs/Screenshots/07___Node_LoggedOn_but_NotRegistered.jpg?raw=true" width="45%">
+</p>
+
+
+<p align="center">
+  <img src="/Docs/Screenshots/08___Node_Login_but_NotRegistred_showPIN.jpg?raw=true" width="45%">
+</p>
+
+
+<p align="center">
+  <img src="/Docs/Screenshots/09___Node_QDisplay_NOT_FOUND.jpg?raw=true" width="45%">
 </p>
 
 
 <p align="center">
 <b>Ticketing Station (QPrint). Hosted at Raspberry Pi2 Model B</b>
 <br><br>
-  <img src="/Docs/Screenshots/IMG_20160830_071453.jpg?raw=true" width="60%">
-</p>
-
-
-<p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071630.jpg?raw=true" width="45%">
-</p>
-
-
-<p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071656.jpg?raw=true" width="45%">
-</p>
-
-
-<p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071713.jpg?raw=true" width="45%">
-</p>
-
-
-<p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071755.jpg?raw=true" width="45%">
-</p>
-
-
-<p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071834.jpg?raw=true" width="45%">
-</p>
-
-
-<p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071958.jpg?raw=true" width="45%">
-</p>
-
-
-<p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_083344.jpg?raw=true" width="45%">
+  <img src="/Docs/Screenshots/10___QPrint.jpg?raw=true" width="60%">
 </p>
