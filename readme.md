@@ -9,8 +9,6 @@
 
 
 <hr>
-
-
 <p align="center">
   <b>Main Display and Server (QDisplay). Hosted at Raspberry Pi2 Model B</b>
   <br><br>
@@ -23,8 +21,6 @@
 
 
 <hr>
-
-
 <p align="center">
 <b>Ticket Processed ...</b>
 <br><br>
@@ -37,29 +33,24 @@
 
 
 <hr>
-
-
 <p align="center">
   <img src="/Docs/Screenshots/05___Node_StartUp.jpg?raw=true" width="45%">
 </p>
 
 
 <hr>
-
 <p align="center">
   <img src="/Docs/Screenshots/06___Node_Login_to_AP.jpg?raw=true" width="45%">
 </p>
 
 
 <hr>
-
 <p align="center">
   <img src="/Docs/Screenshots/06___Node_Login_to_AP_FAIL.jpg?raw=true" width="45%">
 </p>
 
 
 <hr>
-
 <p align="center">
   <img src="/Docs/Screenshots/07___Node_LoggedOn_but_NotRegistered.jpg?raw=true" width="45%">
 </p>
@@ -83,3 +74,4 @@
 <br><br>
   <img src="/Docs/Screenshots/10___QPrint.jpg?raw=true" width="60%">
 </p>
+fs
