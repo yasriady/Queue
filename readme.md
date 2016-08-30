@@ -8,9 +8,6 @@
 </p>
 
 
-<p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071630.jpg?raw=true" width="45%">
-</p>
 
 <p align="center">
   <b>Main Display and Server (QDisplay). Hosted at Raspberry Pi2 Model B</b>
@@ -18,9 +15,9 @@
   <img src="/Docs/Screenshots/IMG_20160830_071555.jpg?raw=true" width="60%">
 </p>
 
-
-
-
+<p align="center">
+  <img src="/Docs/Screenshots/IMG_20160830_071630.jpg?raw=true" width="45%">
+</p>
 
 
 
