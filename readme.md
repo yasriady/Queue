@@ -8,6 +8,7 @@
 </p>
 
 
+<div style="border: 1px solid; width:500px;">
 
 <p align="center">
   <b>Main Display and Server (QDisplay). Hosted at Raspberry Pi2 Model B</b>
@@ -19,6 +20,7 @@
   <img src="/Docs/Screenshots/01___Node_Call_1rst_Attemption.jpg?raw=true" width="45%">
 </p>
 
+</div>
 
 
 <p align="center">
