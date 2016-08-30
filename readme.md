@@ -8,7 +8,7 @@
 </p>
 
 
-<table width="70%"> <tr><td>
+<table width="60%"> <tr><td>
 
     <p align="center">
       <b>Main Display and Server (QDisplay). Hosted at Raspberry Pi2 Model B</b>
