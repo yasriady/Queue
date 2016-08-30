@@ -1,0 +1,13 @@
+QWidget {
+    font-weight: bold;
+}
+
+#displayedName {
+    color: white;
+    background-color: red;
+}
+
+#queueNo {
+    color: yellow;
+    background-color: black;
+}

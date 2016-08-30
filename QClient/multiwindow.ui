@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MultiWindow</class>
+ <widget class="QMainWindow" name="MultiWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>307</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowName" stdset="0">
+   <string>MultiWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="2">
+     <widget class="Node" name="frame_03">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:03:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="Node" name="NODE_04">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:04:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="Node" name="NODE_10">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:10:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="Node" name="NODE_02">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:02:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="Node" name="NODE_06">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:06:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="Node" name="NODE_08">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:08:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="Node" name="NODE_01">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:01:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="Node" name="NODE_07">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:07:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="Node" name="NODE_05">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:05:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="Node" name="NODE_09">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:09:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>625</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Node</class>
+   <extends>QFrame</extends>
+   <header>Node/node.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

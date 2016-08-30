@@ -1,0 +1,85 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2016-08-07T07:00:27
+#
+#-------------------------------------------------
+
+CONFIG += c++11
+
+QT       += core gui sql multimediawidgets
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
+
+TARGET = QPrint
+TEMPLATE = app
+
+unix:QMAKE_RPATHDIR += /opt/Queue/QtLib /opt/Queue/QtLib/Qt5
+#unix:QMAKE_RPATHDIR += /home/dedy/QtProjects/QtLib/build-QtLib-Desktop_Qt_5_7_0_GCC_64bit-Debug
+#unix:QMAKE_RPATHDIR += /home/dedy/QtProjects/QtLib/build-QtDB-Desktop_Qt_5_7_0_GCC_64bit-Debug
+#unix:QMAKE_RPATHDIR += /opt/Queue/QtLib
+
+SOURCES += main.cpp\
+    print.cpp \
+    ticketdata.cpp \
+    statusbar.cpp \
+    statusbarwidget.cpp \
+    ticket.cpp \
+    mainwindow.cpp \
+    ../QDisplay/db.cpp
+
+HEADERS  += print.h \
+    ticketdata.h \
+    ../QDisplay/config.h \
+    statusbar.h \
+    statusbarwidget.h \
+    ticket.h \
+    mainwindow.h \
+    ../QDisplay/db.h
+
+FORMS    += \
+    statusbarwidget.ui \
+    ticket.ui \
+    mainwindow.ui
+
+RESOURCES += \
+    ../../QtLib/QtLib/Resources/resources.qrc
+
+DISTFILES += \
+    TicketTemplate.html \
+    qprint2.qmodel \
+    Extra/Queue.db \
+    Extra/Logo.png \
+    Extra/config.ini \
+    Extra/logo_jakarta.jpg \
+    Extra/Logo.jpg \
+    Extra/Logo2.png \
+    Extra/TicketTemplate.html \
+    Extra/config.inx \
+    ../_Extra/_QQueue.qss \
+    Extra/QPrint_PrintWindow.qss \
+    Extra/NodeWindow_CALL.qss \
+    Extra/QDisplay_BigNodeWindow.qss \
+    Extra/QDisplay_DisplayWindow.qss \
+    Extra/QDisplay_NodeWindow.qss \
+    Extra/v_Queue.qss
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtConfig/release/ -lQtConfig
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtConfig/debug/ -lQtConfig
+else:unix:!macx: LIBS += -L$$OUT_PWD/../../QtLib/QtConfig/ -lQtConfig
+
+INCLUDEPATH += $$PWD/../../QtLib/QtConfig
+DEPENDPATH += $$PWD/../../QtLib/QtConfig
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtLib/release/ -lQtLib
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtLib/debug/ -lQtLib
+else:unix:!macx: LIBS += -L$$OUT_PWD/../../QtLib/QtLib/ -lQtLib
+
+INCLUDEPATH += $$PWD/../../QtLib/QtLib
+DEPENDPATH += $$PWD/../../QtLib/QtLib
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtDB/release/ -lQtDB
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtDB/debug/ -lQtDB
+else:unix:!macx: LIBS += -L$$OUT_PWD/../../QtLib/QtDB/ -lQtDB
+
+INCLUDEPATH += $$PWD/../../QtLib/QtDB
+DEPENDPATH += $$PWD/../../QtLib/QtDB

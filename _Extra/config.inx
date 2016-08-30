@@ -1,0 +1,83 @@
+[General]
+Client_ClientWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x3N\0\0\x2\x19\0\0\x4\x91\0\0\x3\x8f\0\0\x3T\0\0\x2.\0\0\x4\x8b\0\0\x3\x89\0\0\0\0\0\0\0\0\x5\0)
+Client_ClientWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x1\x38\0\0\x1\\\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+MainWindowA_DisplayWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0>\0\0\0\x36\0\0\x4\xf1\0\0\x3\x38\0\0\0\x44\0\0\0K\0\0\x4\xeb\0\0\x3\x32\0\0\0\0\0\0\0\0\x5\0)
+MainWindowA_DisplayWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x4\xa8\0\0\x2\xe8\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+MainWindowA__geometry="@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0=\0\0\0=\0\0\x4\xfa\0\0\x3\f\0\0\0\x43\0\0\0R\0\0\x4\xf4\0\0\x3\x6\0\0\0\0\0\0\0\0\x5\0)"
+MainWindowA__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x4\xb2\0\0\x2\xb5\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+MainWindowB__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x1>\0\0\0W\0\0\x4i\0\0\x2\xc9\0\0\x1\x44\0\0\0l\0\0\x4\x63\0\0\x2\xc3\0\0\0\0\0\0\0\0\x5\0)
+MainWindowB__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x3 \0\0\x2\x42\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+MainWindow_DisplayWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0U\0\0\0\x66\0\0\x4\xf3\0\0\x2\xd8\0\0\0[\0\0\0{\0\0\x4\xed\0\0\x2\xd2\0\0\0\0\0\0\0\0\x5\0)
+MainWindow_DisplayWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x4\x93\0\0\x2X\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+MainWindow_PrintWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\xd1\0\0\0K\0\0\x4q\0\0\x3N\0\0\0\xd7\0\0\0`\0\0\x4k\0\0\x3H\0\0\0\0\0\0\0\0\x5\0)
+MainWindow_PrintWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x3\x95\0\0\x2\xbb\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\xe\0t\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
+MainWindow__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x1\x45\0\0\0\x99\0\0\x4k\0\0\x3`\0\0\x1K\0\0\0\xae\0\0\x4\x65\0\0\x3Z\0\0\0\0\0\0\0\0\x5\0)
+MainWindow__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x3\x1b\0\0\x2\x7f\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\xe\0t\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
+
+[BigNode]
+callingStyleSheet="color: rgb(255, 244, 0)"
+processStyleSheet="color: rgb(255, 255, 255)"
+txtWelcome1=Welcome to our Queueing System .....
+txtWelcome2=Queue!
+txtWelcome3=Need Help?
+txtWelcome4=Call Customer Service
+
+[Client]
+macAddress=A6:DF:8B:7D:DD:CF
+macAddress_1=8C:89:A5:57:A6:41
+macAddress_2=5C:CF:7F:0F:E7:3D  // ESP-8266
+macAddress_3=A3:DF:8B:7D:DD:CF
+macAddress_4=A4:DF:8B:7D:DD:CF
+macAddress_5=A5:DF:8B:7D:DD:CF
+macAddress_6=A6:DF:8B:7D:DD:CF
+macAddress_7=A7:DF:8B:7D:DD:CF
+macAddress_8=A8:DF:8B:7D:DD:CF
+macAddress_9=A9:DF:8B:7D:DD:CF
+macAddress_A=B0:DF:8B:7D:DD:CF
+simulationMode=true
+
+[DCallerSound]
+audioDir=Audio/Google_1
+
+[DLogger]
+redirect=true
+
+[DMedia]
+ToolBar=false
+_mediaFile=/home/dedy/Videos/Movie/Azzam-Belajar_Huruf/Belajar Pengucapan Alfabet ABC Bahasa Inggris.mp4
+autoStart=false
+sleepTimeToWait=500
+
+[DPrint]
+ToolBar=false
+
+[MainWindow]
+mainPic=Pictures/Blue-Parrots-HD_B.jpg
+mainPic_=Pictures/922402-yummy-fruit-wallpaper_B.jpg
+programQClient=/home/dedy/QtProjects/Queue/build-Queue-Desktop_Qt_5_7_0_GCC_64bit-Debug/QClient/QClient
+stackedWidget=0
+
+[MainWindowA]
+mainPic=Pictures/Blue-Parrots-HD_B.jpg
+programQClient=
+stackedWidget=0
+
+[Node]
+callingStyleSheet=" background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);"
+processStyleSheet=" background-color: rgb(0, 0, 0)"
+
+[QApplication]
+styeSheet=Queue.qss
+
+[ScrollingText]
+runningText_padQty=1
+runningText_show=true
+runningText_started=true
+runningText_timer=500
+
+[Ticket]
+ticketTemplate=TicketTemplate.html
+
+[_Node]
+callingStyleSheet="color: rgb(255, 244, 0)"
+processStyleSheet="color: rgb(255, 255, 255)"

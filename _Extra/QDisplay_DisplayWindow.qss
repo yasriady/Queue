@@ -1,0 +1,21 @@
+#centralWidget
+{
+    background-color: black;
+    color: white;
+}
+
+#footer
+{
+}
+
+#runningText
+{
+    color: green;
+    font: 0pt "Ubuntu";
+    font-weight: bold;
+}
+
+#clock
+{
+    color: blue;
+}

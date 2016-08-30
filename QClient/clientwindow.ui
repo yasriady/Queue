@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientWindow</class>
+ <widget class="QMainWindow" name="ClientWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>414</width>
+    <height>326</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Queue Node</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../QtLib/Resources/resources.qrc">
+    <normaloff>:/icon/svg_96/cs-keyboard.svg</normaloff>:/icon/svg_96/cs-keyboard.svg</iconset>
+  </property>
+  <property name="windowName" stdset="0">
+   <string>ClientWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="Node" name="NODE">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="simulationMode" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macAddress" stdset="0">
+       <string>DF:01:AA:40:DE:FF</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>414</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="StatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Node</class>
+   <extends>QFrame</extends>
+   <header>Node/node.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StatusBar</class>
+   <extends>QStatusBar</extends>
+   <header>StatusBar/statusbar.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../QtLib/Resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

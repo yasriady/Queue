@@ -1,0 +1,44 @@
+#centralWidget_
+{
+    background-color: black;
+}
+
+#service {
+    color: white;
+    background-color: red;
+}
+
+#queueNo {
+    color: green;
+}
+
+#displayedName {
+    color: cyan;
+}
+
+#status {
+    color: blue;
+}
+
+#frame_5 {
+    background-color: #808000;
+}
+
+#message {
+    color: red;
+    background-color: lightgray;
+}
+
+#dateTime {
+}
+
+#init {
+}
+
+#calling {
+    background-color: green;
+}
+
+#process {
+    background-color: orange;
+}
