@@ -8,7 +8,8 @@
 </p>
 
 <p align="center">
-  <b>Main QDisplay, also as Queue Server. Hosted by Raspberry Pi2</b><br>
+  <b>Main Display and Server (QDisplay). Hosted by Raspberry Pi2</b>
+  <br><br>
   <img src="/Docs/Screenshots/IMG_20160830_071555.jpg?raw=true" width="60%">
 </p>
 
