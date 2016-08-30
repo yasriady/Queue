@@ -21,40 +21,42 @@
 
 
 <p align="center">
+<b>Ticketing Station (QPrint). Hosted at Raspberry Pi2 Model B</b>
+<br><br>
   <img src="/Docs/Screenshots/IMG_20160830_071453.jpg?raw=true" width="60%">
 </p>
 
 
 <p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071630.jpg?raw=true" width="60%">
+  <img src="/Docs/Screenshots/IMG_20160830_071630.jpg?raw=true" width="45%">
 </p>
 
 
 <p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071656.jpg?raw=true" width="60%">
+  <img src="/Docs/Screenshots/IMG_20160830_071656.jpg?raw=true" width="45%">
 </p>
 
 
 <p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071713.jpg?raw=true" width="60%">
+  <img src="/Docs/Screenshots/IMG_20160830_071713.jpg?raw=true" width="45%">
 </p>
 
 
 <p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071755.jpg?raw=true" width="60%">
+  <img src="/Docs/Screenshots/IMG_20160830_071755.jpg?raw=true" width="45%">
 </p>
 
 
 <p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071834.jpg?raw=true" width="60%">
+  <img src="/Docs/Screenshots/IMG_20160830_071834.jpg?raw=true" width="45%">
 </p>
 
 
 <p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_071958.jpg?raw=true" width="60%">
+  <img src="/Docs/Screenshots/IMG_20160830_071958.jpg?raw=true" width="45%">
 </p>
 
 
 <p align="center">
-  <img src="/Docs/Screenshots/IMG_20160830_083344.jpg?raw=true" width="60%">
+  <img src="/Docs/Screenshots/IMG_20160830_083344.jpg?raw=true" width="45%">
 </p>
