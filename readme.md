@@ -8,19 +8,19 @@
 </p>
 
 
-<div style="border: 1px solid; width:500px;">
+<table width="70%"> <tr><td>
 
-<p align="center">
-  <b>Main Display and Server (QDisplay). Hosted at Raspberry Pi2 Model B</b>
-  <br><br>
-  <img src="/Docs/Screenshots/01___QDisplay_1Call.jpg?raw=true" width="60%">
-</p>
+    <p align="center">
+      <b>Main Display and Server (QDisplay). Hosted at Raspberry Pi2 Model B</b>
+      <br><br>
+      <img src="/Docs/Screenshots/01___QDisplay_1Call.jpg?raw=true" width="60%">
+    </p>
 
-<p align="center">
-  <img src="/Docs/Screenshots/01___Node_Call_1rst_Attemption.jpg?raw=true" width="45%">
-</p>
+    <p align="center">
+      <img src="/Docs/Screenshots/01___Node_Call_1rst_Attemption.jpg?raw=true" width="45%">
+    </p>
 
-</div>
+</td></tr></table>
 
 
 <p align="center">
