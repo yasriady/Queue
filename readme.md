@@ -1,7 +1,30 @@
+<p align="center">
+  <b>Wireless Queue Ticketing</b><br>
+  <a href="#">screenshot</a> |
+  <a href="#">screenshot</a> |
+  <a href="#">screenshot</a>
+  <br><br>
+  <img src="/Docs/Queue.png?raw=true">
+</p>
+
+<p align="center">
+  <b>Main QDisplay, also as Queue Server. Hosted by Raspberry Pi2</b><br>
+  <img src="/Docs/Screenshots/IMG_20160830_071555.jpg?raw=true" width="50%">
+</p>
+
+
+
+
+
+
+
 
 ![Alt text](/Docs/Queue.png?raw=true "Optional Title")
 
 ![Alt text](/Docs/Screenshots/IMG_20160830_071555.jpg?raw=true "Optional Title")
+
+
+
 
 ![Alt text](/Docs/Screenshots/IMG_20160830_083344.jpg?raw=true "Optional Title")
 
@@ -23,11 +46,3 @@
 
 ![Alt text](/Docs/Screenshots/IMG_20160830_071453.jpg?raw=true "Optional Title")
 
-<p align="center">
-  <b>Wireless Queue Ticketing</b><br>
-  <a href="#">screenshot</a> |
-  <a href="#">screenshot</a> |
-  <a href="#">screenshot</a>
-  <br><br>
-  <img src="/Docs/Queue.png?raw=true">
-</p>
