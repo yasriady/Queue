@@ -4,12 +4,12 @@
   <a href="#">screenshot</a> |
   <a href="#">screenshot</a>
   <br><br>
-  <img src="/Docs/Queue.png?raw=true">
+  <img src="/Docs/Queue.png?raw=true" width="85%">
 </p>
 
 <p align="center">
   <b>Main QDisplay, also as Queue Server. Hosted by Raspberry Pi2</b><br>
-  <img src="/Docs/Screenshots/IMG_20160830_071555.jpg?raw=true" width="50%">
+  <img src="/Docs/Screenshots/IMG_20160830_071555.jpg?raw=true" width="60%">
 </p>
 
 
