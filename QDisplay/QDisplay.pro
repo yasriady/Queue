@@ -79,7 +79,26 @@ DISTFILES += \
     Extra/QClient_ClientWindow.qss \
     Extra/QDisplay_BigNodeWindow_CALL.qss \
     Extra/QDisplay_NodeWindow_CALL.qss \
-    Extra/QPrint_PrintWindow.qss
+    Extra/QPrint_PrintWindow.qss \
+    ../Docs/Screenshots/Untitled Folder/IMG_20160830_070843.jpg \
+    ../Docs/Screenshots/Untitled Folder/IMG_20160830_070904.jpg \
+    ../Docs/Screenshots/Untitled Folder/IMG_20160830_071242.jpg \
+    ../Docs/Screenshots/Untitled Folder/IMG_20160830_071658.jpg \
+    ../Docs/Screenshots/Untitled Folder/IMG_20160830_071716.jpg \
+    ../Docs/Screenshots/Untitled Folder/IMG_20160830_072003.jpg \
+    ../Docs/Screenshots/IMG_20160830_071453.jpg \
+    ../Docs/Screenshots/IMG_20160830_071548.jpg \
+    ../Docs/Screenshots/IMG_20160830_071555.jpg \
+    ../Docs/Screenshots/IMG_20160830_071630.jpg \
+    ../Docs/Screenshots/IMG_20160830_071640.jpg \
+    ../Docs/Screenshots/IMG_20160830_071656.jpg \
+    ../Docs/Screenshots/IMG_20160830_071713.jpg \
+    ../Docs/Screenshots/IMG_20160830_071755.jpg \
+    ../Docs/Screenshots/IMG_20160830_071834.jpg \
+    ../Docs/Screenshots/IMG_20160830_071958.jpg \
+    ../Docs/Screenshots/IMG_20160830_083344.jpg \
+    ../Docs/Queue.png \
+    ../readme.md
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtConfig/release/ -lQtConfig
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtConfig/debug/ -lQtConfig
