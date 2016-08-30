@@ -8,7 +8,6 @@
 </p>
 
 
-
 <hr>
 
 
@@ -23,7 +22,7 @@
 </p>
 
 
-
+<hr>
 
 
 <p align="center">
@@ -37,7 +36,7 @@
 </p>
 
 
-
+<hr>
 
 
 <p align="center">
@@ -45,31 +44,40 @@
 </p>
 
 
+<hr>
+
 <p align="center">
   <img src="/Docs/Screenshots/06___Node_Login_to_AP.jpg?raw=true" width="45%">
 </p>
 
+
+<hr>
 
 <p align="center">
   <img src="/Docs/Screenshots/06___Node_Login_to_AP_FAIL.jpg?raw=true" width="45%">
 </p>
 
 
+<hr>
+
 <p align="center">
   <img src="/Docs/Screenshots/07___Node_LoggedOn_but_NotRegistered.jpg?raw=true" width="45%">
 </p>
 
 
+<hr>
 <p align="center">
   <img src="/Docs/Screenshots/08___Node_Login_but_NotRegistred_showPIN.jpg?raw=true" width="45%">
 </p>
 
 
+<hr>
 <p align="center">
   <img src="/Docs/Screenshots/09___Node_QDisplay_NOT_FOUND.jpg?raw=true" width="45%">
 </p>
 
 
+<hr>
 <p align="center">
 <b>Ticketing Station (QPrint). Hosted at Raspberry Pi2 Model B</b>
 <br><br>
