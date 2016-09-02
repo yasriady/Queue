@@ -25,16 +25,15 @@ SOURCES += main.cpp\
     statusbarwidget.cpp \
     ticket.cpp \
     mainwindow.cpp \
-    ../QDisplay/db.cpp
+    ../SharedClass/db.cpp
 
 HEADERS  += print.h \
     ticketdata.h \
-    ../QDisplay/config.h \
     statusbar.h \
     statusbarwidget.h \
     ticket.h \
     mainwindow.h \
-    ../QDisplay/db.h
+    ../SharedClass/db.h
 
 FORMS    += \
     statusbarwidget.ui \

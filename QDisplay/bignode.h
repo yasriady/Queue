@@ -10,8 +10,8 @@
 #define BIGNODE_H
 
 #include <QWidget>
-#include "config.h"
-#include <ndhelper.h>
+#include "../SharedClass/config.h"
+#include "../SharedClass/ndhelper.h"
 #include <Inc/Widget>
 
 namespace Ui {

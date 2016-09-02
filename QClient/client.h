@@ -15,15 +15,15 @@
 #include <QNetworkInterface>
 #include <QTimer>
 #include <QMainWindow>
-#include "../QDisplay/config.h"
+#include "../SharedClass/config.h"
 
 #include <QFrame>
 #include <QLabel>
 #include <QThread>
 #include <QLineEdit>
 #include <QGraphicsDropShadowEffect>
-#include "../QDisplay/ndhelper.h"
-#include "../QDisplay/rdhelper.h"
+#include "../SharedClass/ndhelper.h"
+#include "../SharedClass/rdhelper.h"
 
 namespace Ui {
 class Client;
@@ -38,9 +38,6 @@ public:
     ~Client();
 
 private slots:
-    void on_toolButton_Login_clicked();
-    void on_toolButton_Logout_clicked();
-    void on_toolButton_Ping_clicked();
     void slotReadyRead();
     void slotMyTimer();
     void on_actionExit_triggered();

@@ -10,7 +10,7 @@
 #define MAINWINDOW_H
 
 #include <MainWindow/dmainwindow.h>
-#include "../QDisplay/db.h"
+#include "../SharedClass/db.h"
 #include "ticket.h"
 #include <Inc/PushButton>
 #include <Inc/CallerSound>

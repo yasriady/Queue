@@ -19,7 +19,7 @@
 #include <QScreen>
 #include <QTextBrowser>
 #include <QDir>
-#include "../QDisplay/config.h"
+#include "../SharedClass/config.h"
 #include <Config>
 
 // http://www.richelbilderbeek.nl/CppQPrinterExample1.htm

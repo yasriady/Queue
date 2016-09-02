@@ -10,7 +10,7 @@
 #define TICKET_H
 
 #include <QFrame>
-#include "../QDisplay/db.h"
+#include "../SharedClass/db.h"
 #include <Config>
 
 #define TICKETDIR       APPDIR + SEP + "Ticket" + SEP + TODAY_ + SEP

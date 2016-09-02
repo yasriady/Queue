@@ -23,8 +23,8 @@ SOURCES +=\
     client.cpp \
     mainwindow.cpp \
     statusbar.cpp \
-    ../QDisplay/ndhelper.cpp \
-    ../QDisplay/rdhelper.cpp
+    ../SharedClass/ndhelper.cpp \
+    ../SharedClass/rdhelper.cpp
 
 HEADERS  += \
     mysocket.h \
@@ -32,10 +32,10 @@ HEADERS  += \
     client.h \
     mainwindow.h \
     statusbar.h \
-    ../QDisplay/config.h \
     ../WiFiClient_LCD/arduino.h \
-    ../QDisplay/ndhelper.h \
-    ../QDisplay/rdhelper.h
+    ../SharedClass/ndhelper.h \
+    ../SharedClass/rdhelper.h \
+    ../SharedClass/config.h
 
 FORMS    += \
     statusbarwidget.ui \

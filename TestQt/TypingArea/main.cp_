@@ -1,0 +1,23 @@
+#include <QApplication>
+#include <QVBoxLayout>
+#include "typingarea.h"
+
+int main(int argc, char *argv[]) {
+	QApplication app(argc, argv);
+
+	QWidget *window = new QWidget;
+	window->setWindowTitle("Input Area");
+
+	TypingArea *input = new TypingArea;
+	input->setText(QString::fromLocal8Bit("Standing in the middle of the road is dangerous, you will get knocked down by the traffic from both directions."));
+
+	QVBoxLayout *layout = new QVBoxLayout;
+	layout->addStretch(50);
+	layout->addWidget(input);
+	layout->addStretch(50);
+	window->setLayout(layout);
+
+	window->show();
+
+	return app.exec();
+}

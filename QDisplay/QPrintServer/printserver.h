@@ -10,7 +10,7 @@
 #define PRINTSERVER2_H
 
 #include <QObject>
-#include "../db.h"
+#include "../SharedClass/db.h"
 #include <QTcpServer>
 #include <QTcpSocket>
 

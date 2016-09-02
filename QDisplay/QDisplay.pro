@@ -21,33 +21,34 @@ CONFIG += c++11
 
 SOURCES += main.cpp\
         MainWindow/mainwindow.cpp \
-    server.cpp \
-    socket.cpp \
     QPrintServer/printserver.cpp \
     bignode.cpp \
     MainWindow/mainwindowtest.cpp \
-    db.cpp \
     MainWindow/mainwindowa.cpp \
     MainWindow/mainwindowbase.cpp \
     Node/nodea.cpp \
-    ../QShared/nodedata.cpp \
-    ndhelper.cpp \
-    rdhelper.cpp
+    ../SharedClass/ndhelper.cpp \
+    ../SharedClass/rdhelper.cpp \
+    ../SharedClass/server.cpp \
+    ../SharedClass/socket.cpp \
+    ../SharedClass/db.cpp \
+    remotedisplay.cpp
 
 HEADERS  += MainWindow/mainwindow.h \
-    server.h \
-    socket.h \
     QPrintServer/printserver.h \
     bignode.h \
     MainWindow/mainwindowtest.h \
     config.h \
-    db.h \
     MainWindow/mainwindowa.h \
     MainWindow/mainwindowbase.h \
     Node/nodea.h \
-    ../QShared/nodedata.h \
-    ndhelper.h \
-    rdhelper.h
+    ../SharedClass/ndhelper.h \
+    ../SharedClass/rdhelper.h \
+    ../SharedClass/server.h \
+    ../SharedClass/socket.h \
+    ../SharedClass/config.h \
+    ../SharedClass/db.h \
+    remotedisplay.h
 
 FORMS    += MainWindow/mainwindow.ui \
     bignode.ui \
@@ -120,3 +121,5 @@ else:unix:!macx: LIBS += -L$$OUT_PWD/../../QtLib/QtDB/ -lQtDB
 
 INCLUDEPATH += $$PWD/../../QtLib/QtDB
 DEPENDPATH += $$PWD/../../QtLib/QtDB
+
+unix:!macx: LIBS += -lasound

@@ -71,76 +71,6 @@ Client::~Client()
     delete ui;
 }
 
-void Client::on_toolButton_Login_clicked()
-{
-//    m_dt.connected = false;
-//    m_message = NOTCONNECTED;
-//    m_displayedName = "";
-//    m_nodeName = "";
-//    m_queueNo = 0;
-//    m_GroupCode = "";
-//    m_status = "";
-
-//    m_dt.connected = connectToHost();
-//    if( !m_dt.connected ) {
-//        updateUi(false);
-//        return;
-//    }
-//    //m_message = CONNECTED;
-//    //strncpy( m_dt.clientRequest_, LOGIN_, sizeof(m_dt.clientRequest_)-1);
-
-//    connect( m_tcpSocket, SIGNAL(readyRead()), this, SLOT(slotReadyRead()) );
-
-//    // Customize these:
-//    m_dt.clientRequest = CLIREQUEST::CLI_LOGIN;
-//    m_tcpSocket->write( (char*)&m_dt, sizeof(NodeData));
-
-//    //m_tcpSocket->disconnectFromHost();
-}
-
-void Client::on_toolButton_Logout_clicked()
-{
-//    m_dt.connected = ! disconnectFromHost();
-//    m_message = LOGOUT;
-//    m_displayedName = "";
-//    m_nodeName = "";
-//    m_queueNo = 0;
-//    m_GroupCode = "";
-//    m_status = "";
-
-    //updateUi(false);
-}
-
-void Client::on_toolButton_Ping_clicked()
-{
-//    m_dt.connected = false;
-//    m_message = NOTCONNECTED;
-//    m_displayedName = "";
-//    m_nodeName = "";
-//    m_queueNo = 0;
-//    m_GroupCode = "";
-//    m_status = "";
-
-//    m_dt.connected = connectToHost();
-//    if( !m_dt.connected ) {
-//        updateUi(false);
-//        return;
-//    }
-//    //m_message = CONNECTED;
-//    //strncpy( m_dt.clientRequest_, "ping", sizeof(m_dt.clientRequest_)-1);
-
-//    connect( m_tcpSocket, SIGNAL(readyRead()), this, SLOT(slotReadyRead()) );
-
-//    // Customize these:
-//    m_dt.clientRequest = CLIREQUEST::CLI_PING;
-//    m_tcpSocket->write( (char*)&m_dt, sizeof(NodeData));
-
-//    //m_tcpSocket->disconnectFromHost();
-
-    ui->queueNo->setText( m_dt->queueNoText() );
-
-}
-
 bool Client::connectToHost()
 {
     bool connected;
@@ -293,12 +223,11 @@ void Client::on_actionExit_triggered()
 
 void Client::on_actionLogin_triggered()
 {
-    on_toolButton_Login_clicked();
+
 }
 
 void Client::on_actionLogout_triggered()
 {
-    on_toolButton_Logout_clicked();
 }
 
 QWidget *Client::getWidget()
@@ -308,9 +237,6 @@ QWidget *Client::getWidget()
 
 void Client::doLogin()
 {
-    on_toolButton_Login_clicked();
-    QThread::msleep(100);
-
 }
 
 void Client::on_calling_clicked()

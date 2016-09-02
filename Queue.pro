@@ -5,5 +5,5 @@ TEMPLATE = subdirs
 CONFIG   += ordered
 
 #SUBDIRS = ../QtLib QPrint QClient QDisplay
-SUBDIRS = ../QtLib QDisplay QPrint QClient
+SUBDIRS = ../QtLib QRemoteDisplay QDisplay QClient QPrint TestQt
 
