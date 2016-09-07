@@ -4,7 +4,7 @@
 */
 
 #include "mainwindow.h"
-#include <Application>
+#include <Inc/Application>
 
 int main(int argc, char *argv[])
 {

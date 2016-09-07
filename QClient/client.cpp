@@ -6,7 +6,6 @@ Client::Client(QWidget *parent, QLineEdit *mac) :
     ui(new Ui::Client)
 {
     ui->setupUi(this);
-    init();
 
     m_dt = new NDHelper();
     m_rd = new RDHelper();
@@ -237,6 +236,12 @@ QWidget *Client::getWidget()
 
 void Client::doLogin()
 {
+}
+
+void Client::customInit()
+{
+    m_windowName = "Client";
+    setWindowTitle("QClient");
 }
 
 void Client::on_calling_clicked()

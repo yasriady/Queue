@@ -13,6 +13,9 @@
 //#include <QApplication>
 //#include <QDateTime>
 
+//#define setDB                       m_db = new DB(); setProperty("DB", (char*)m_db);
+//#define getDB                       char* c = (char*) property("DB").toByteArray().data(); m_db = (DB*) c;
+
 // Arduino ---
 
 #define MYSSID						"SSID2"
@@ -23,8 +26,8 @@
 // PC --------
 
 #define DISPLAYSERVER               confg->string( KEY("DisplayServer"), "192.168.1.2")
-#define DISPLAYSERVERPORT           confg->integr( KEY("DisplayServerPort"), 9000)
-#define REMOTEDISPLAYPORT           confg->integr( KEY("DisplayServerPort"), 9100)
+#define DISPLAYSERVERPORT           9000 // confg->integr( KEY("DisplayServerPort"), 9000)
+#define REMOTEDISPLAYPORT           9100 // confg->integr( KEY("RemoteDisplayPort"), 9100)
 
 // Taxonomy code
 #define ERR_SRVBUSY                 "ERR_SRVBUSY"
@@ -47,6 +50,10 @@
 //#define TICKETFORMAT        QString( "%1-%2").arg(groupCode).arg( queueNo , 3, 10, QChar('0') )
 #define TICKET(expr1, expr2)    QString( "%1%2").arg(expr1).arg(expr2)
 #define TICKET2                 QString( "%1%2").arg( m_dt.groupCode ).arg(m_dt.queueNo)
+
+// windowName
+#define QCLIENT_MW                  "QClientMainWindow"
+#define QDISPLAY_MW                 "QDisplayMainWindow"
 
 enum REQUEST {
     INIT=0, LOGIN, CALLING, PROCESS, PING
@@ -78,34 +85,35 @@ class NodeData {
 
 public:
     // fixed
-    char        macAddress[18]      = "                 ";                  // 11:22:33:AA:BB:CC
-    char        nodeName[8]         = "       ";                            // NODE_01
+    char        macAddress[18]      = "";                  // 11:22:33:AA:BB:CC
+    char        nodeName[8]         = "";                            // NODE_01
     uint8_t     nodeId              = 0;                                    // 1
-    char        displayedName[11];                         // LOKET 01
-    char        ipAddressClient[16] = "192.168.xxx.xxx";                    // 192.168.100.001, -> reserved
-    char        groupCode[2]        = "-";                                  // A
+    char        displayedName[11]   = "";                         // LOKET 01
+    char        ipAddressClient[16] = "";                    // 192.168.100.001, -> reserved
+    char        groupCode[2]        = "";                                  // A
     uint8_t     portNo              = 0;                                    // 9000, -> reserved
-    char        opr[18]             = "-----------------";                  // reserved
-    char        service[32];                  // example: "Customer Service"
-    // var
+    char        opr[18]             = "";                  // reserved
+    char        service[32]         = "";                  // example: "Customer Service"
+    // variabled
     uint8_t     request             = REQUEST::INIT;
-    char        requestText[12];
+    char        requestText[12]     = "";
     uint8_t     clientRequest       = CLIREQUEST::CLI_INIT;          //
-    char        clientRequest_s[12]     = "       ";                            // CALL, PROCESS
-    uint8_t     serverAnswer;
-    char        serverAnswer_s[8];
+    char        clientRequest_s[12] = "";                            // CALL, PROCESS
+    uint8_t     serverAnswer        = 0;
+    char        serverAnswer_s[8]   = "";
     uint16_t    queueNo             = 0;                                   // type safe data type, lebih aman untuk memastikan panjang data sama disetiap system yang digunakan, yaitu 16 bit. Pada arduino juga.
-    char        queueNo_s[32];
-    char        message[32]         = "-----------------";                  // ?
+    char        queueNo_s[32]       = "";
+    char        message[32]         = "";                  // ?
     bool        connected           = false;                                // reserved
     bool        busy                = false;                                // reserved
     bool        RESULT              = false;                                // reserved
     uint8_t     count               = 0;                                    // reserved
     uint8_t     calledCount         = 0;                                    // ex: 1
-    char        date_s[11]            = "1970-01-01";                         // reserved
-    char        callingTime_s[20]     = "1970-01-01 00:00:00";
-    char        processTime_s[20]     = "1970-01-01 00:00:00";
+    char        date_s[11]          = "1970-01-01";                         // reserved
+    char        callingTime_s[20]   = "1970-01-01 00:00:00";
+    char        processTime_s[20]   = "1970-01-01 00:00:00";
     uint16_t    numOfWaiting        = 0;
+    bool        init                = true;
 
 };
 

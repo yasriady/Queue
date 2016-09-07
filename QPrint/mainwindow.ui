@@ -34,7 +34,7 @@
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
-          <widget class="QStackedWidget" name="stackedWidget">
+          <widget class="DStackedWidget" name="stackedWidget">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
              <horstretch>50</horstretch>
@@ -56,7 +56,7 @@
            <widget class="QWidget" name="picturePage">
             <layout class="QGridLayout" name="gridLayout_4">
              <item row="0" column="0">
-              <widget class="DLabel" name="mainPic">
+              <widget class="DLabelPic" name="mainPic">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
                  <horstretch>0</horstretch>
@@ -84,7 +84,15 @@
            </widget>
            <widget class="DLogger" name="logger"/>
            <widget class="QWidget" name="testingPage">
-            <layout class="QGridLayout" name="gridLayout_3"/>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>testingPage</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </widget>
            <widget class="QWidget" name="mediaPage">
             <layout class="QVBoxLayout" name="verticalLayout_4"/>
@@ -169,21 +177,26 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>DLabel</class>
-   <extends>QLabel</extends>
-   <header>Label/dlabel.h</header>
+   <class>DLogger</class>
+   <extends>QWidget</extends>
+   <header>Inc/Logger</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>Inc/StackedWidget</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DLabelPic</class>
+   <extends>QLabel</extends>
+   <header>Inc/Label</header>
   </customwidget>
   <customwidget>
    <class>StatusBar</class>
    <extends>QStatusBar</extends>
    <header>statusbar.h</header>
-  </customwidget>
-  <customwidget>
-   <class>DLogger</class>
-   <extends>QWidget</extends>
-   <header>Inc/Logger</header>
-   <container>1</container>
   </customwidget>
   <customwidget>
    <class>Ticket</class>
@@ -193,7 +206,6 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../../QtLib/QtLib/Resources/resources.qrc"/>
   <include location="../../QtLib/QtLib/Resources/resources.qrc"/>
   <include location="../../QtLib/QtLib/Resources/resources.qrc"/>
   <include location="../../QtLib/QtLib/Resources/resources.qrc"/>

@@ -1,24 +1,39 @@
 [General]
-Client_ClientWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x2\xcf\0\0\x1/\0\0\x4\0\0\0\x2\xca\0\0\x2\xd5\0\0\x1\x44\0\0\x3\xfa\0\0\x2\xc4\0\0\0\0\0\0\0\0\x5\0)
+Client_ClientWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x3\x9b\0\0\x1_\0\0\x4\xcc\0\0\x2\xfa\0\0\x3\xa1\0\0\x1t\0\0\x4\xc6\0\0\x2\xf4\0\0\0\0\0\0\0\0\x5\0)
 Client_ClientWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x1&\0\0\x1\x81\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
-MainWindowA_DisplayWindow_geometry="@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\x37\0\0\0\x18\0\0\x4\xea\0\0\x3\x80\0\0\0=\0\0\0-\0\0\x4\xe4\0\0\x3z\0\0\0\0\0\0\0\0\x5\0)"
+MainWindowA_DisplayWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\x41\0\0\0\x30\0\0\x4\xf4\0\0\x3\x98\0\0\0G\0\0\0\x45\0\0\x4\xee\0\0\x3\x92\0\0\0\0\0\0\0\0\x5\0)
 MainWindowA_DisplayWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x4\xa8\0\0\x3N\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
 MainWindowA__geometry="@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0=\0\0\0=\0\0\x4\xfa\0\0\x3\f\0\0\0\x43\0\0\0R\0\0\x4\xf4\0\0\x3\x6\0\0\0\0\0\0\0\0\x5\0)"
 MainWindowA__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x4\xb2\0\0\x2\xb5\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
 MainWindowB__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x1>\0\0\0W\0\0\x4i\0\0\x2\xc9\0\0\x1\x44\0\0\0l\0\0\x4\x63\0\0\x2\xc3\0\0\0\0\0\0\0\0\x5\0)
 MainWindowB__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x3 \0\0\x2\x42\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
-MainWindowChild_MainWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0^\0\0\0+\0\0\x4\xcd\0\0\x3R\0\0\0\x64\0\0\0@\0\0\x4\xc7\0\0\x3L\0\0\0\0\0\0\0\0\x5\0)
-MainWindowChild_MainWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x4\x64\0\0\x2\xe6\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\x16\0m\0\x61\0i\0n\0T\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
+MainWindowBase=55
+MainWindowBase__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0I\0\0\0+\0\0\x4\xd9\0\0\x3?\0\0\0O\0\0\0@\0\0\x4\xd3\0\0\x3\x39\0\0\0\0\0\0\0\0\x5\0)
+MainWindowBase__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x4\x85\0\0\x2\xfa\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+MainWindowChild_MainWindow_geometry="@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x1\xb7\0\0\0w\0\0\x3\xa1\0\0\x2,\0\0\x1\xbd\0\0\0\x8c\0\0\x3\x9b\0\0\x2&\0\0\0\0\0\0\0\0\x5\0)"
+MainWindowChild_MainWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x1\xdf\0\0\x1t\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\x16\0m\0\x61\0i\0n\0T\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
 MainWindow_DisplayWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0U\0\0\0\x66\0\0\x4\xf3\0\0\x2\xd8\0\0\0[\0\0\0{\0\0\x4\xed\0\0\x2\xd2\0\0\0\0\0\0\0\0\x5\0)
 MainWindow_DisplayWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x4\x93\0\0\x2X\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
 MainWindow_MainWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0O\0\0\0$\0\0\x4\xde\0\0\x3|\0\0\0U\0\0\0\x39\0\0\x4\xd8\0\0\x3v\0\0\0\0\0\0\0\0\x5\0)
 MainWindow_MainWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x4\x84\0\0\x3\x17\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\x16\0m\0\x61\0i\0n\0T\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
-MainWindow_PrintWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\xd1\0\0\0K\0\0\x4W\0\0\x3)\0\0\0\xd7\0\0\0`\0\0\x4Q\0\0\x3#\0\0\0\0\0\0\0\0\x5\0)
+MainWindow_PrintWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\xc7\0\0\0\x41\0\0\x4M\0\0\x3\x1f\0\0\0\xcd\0\0\0V\0\0\x4G\0\0\x3\x19\0\0\0\0\0\0\0\0\x5\0)
 MainWindow_PrintWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x3{\0\0\x2\x96\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\xe\0t\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
 MainWindow_RemoteDisplayWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\xd5\0\0\0Z\0\0\x4\x8f\0\0\x3r\0\0\0\xdb\0\0\0o\0\0\x4\x89\0\0\x3l\0\0\0\0\0\0\0\0\x5\0)
 MainWindow_RemoteDisplayWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x3\xaf\0\0\x2\xd7\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\x16\0m\0\x61\0i\0n\0T\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
-MainWindow__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x1\x45\0\0\0\x99\0\0\x4k\0\0\x3`\0\0\x1K\0\0\0\xae\0\0\x4\x65\0\0\x3Z\0\0\0\0\0\0\0\0\x5\0)
-MainWindow__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x3\x1b\0\0\x2\x7f\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\xe\0t\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
+MainWindow__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\x65\0\0\0?\0\0\x2\x91\0\0\x2\x34\0\0\0k\0\0\0T\0\0\x2\x8b\0\0\x2.\0\0\0\0\0\0\0\0\x5\0)
+MainWindow__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x2!\0\0\x1\xdb\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+QClient_Client_ClientWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x2\xbd\0\0\0[\0\0\x3\xb5\0\0\x1\xb7\0\0\x2\xc3\0\0\0p\0\0\x3\xaf\0\0\x1\xb1\0\0\0\0\0\0\0\0\x5\0)
+QClient_Client_ClientWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\0\xed\0\0\x1\x42\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+QDisplayMainWindow__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0_\0\0\0!\0\0\x3\x1e\0\0\x2`\0\0\0\x65\0\0\0\x36\0\0\x3\x18\0\0\x2Z\0\0\0\0\0\0\0\0\x5\0)
+QDisplayMainWindow__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x2\xb4\0\0\x2%\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+QDisplay_MainWindow__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0\x83\0\0\0\x8d\0\0\x2\xff\0\0\x2\xb4\0\0\0\x89\0\0\0\xa2\0\0\x2\xf9\0\0\x2\xae\0\0\0\0\0\0\0\0\x5\0)
+QDisplay_MainWindow__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x2q\0\0\x1\xe8\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+QPrint_MainWindow_PrintWindow_geometry="@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x1&\0\0\0p\0\0\x3\xf9\0\0\x2\xa1\0\0\x1,\0\0\0\x85\0\0\x3\xf3\0\0\x2\x9b\0\0\0\0\0\0\0\0\x5\0)"
+QPrint_MainWindow_PrintWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x2\xc8\0\0\x1\xe9\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\xe\0t\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
+QRemoteDisplayMainWindow__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x2\x9a\0\0\x1\xda\0\0\x4\xdd\0\0\x3\xc3\0\0\x2\xa0\0\0\x1\xef\0\0\x4\xd7\0\0\x3\xbd\0\0\0\0\0\0\0\0\x5\0)
+QRemoteDisplayMainWindow__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x2\x38\0\0\x1\xcf\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+QRemoteDisplay_MainWindow__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x2\x1e\0\0\x2\a\0\0\x4\xb1\0\0\x3\xc0\0\0\x2$\0\0\x2\x1c\0\0\x4\xab\0\0\x3\xba\0\0\0\0\0\0\0\0\x5\0)
+QRemoteDisplay_MainWindow__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x2\x88\0\0\x1z\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
 
 [BigNode]
 callingStyleSheet="color: rgb(255, 244, 0)"
@@ -57,16 +72,20 @@ sleepTimeToWait=500
 [DPrint]
 ToolBar=false
 
+[DStackedWidget]
+stackedWidget=0
+
 [MainWindow]
 mainPic=Pictures/Blue-Parrots-HD_B.jpg
 mainPic_=Pictures/922402-yummy-fruit-wallpaper_B.jpg
 programQClient=/home/dedy/QtProjects/Queue/build-Queue-Desktop_Qt_5_7_0_GCC_64bit-Debug/QClient/QClient
-stackedWidget=0
 
 [MainWindowA]
 mainPic=Pictures/Blue-Parrots-HD_B.jpg
 programQClient=
-stackedWidget=0
+
+[MainWindowBase]
+nodesVerticalStretchFactor=55
 
 [Node]
 callingStyleSheet=" background-color: rgb(255, 255, 0); color: rgb(0, 0, 0);"
@@ -74,6 +93,9 @@ processStyleSheet=" background-color: rgb(0, 0, 0)"
 
 [QApplication]
 styeSheet=Queue.qss
+
+[QStatusBar]
+DStatusBar=true
 
 [ScrollingText]
 runningText_padQty=1

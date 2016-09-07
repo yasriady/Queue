@@ -1,0 +1,7 @@
+[General]
+QClient_Client_ClientWindow_geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\x3n\0\0\x1\xd9\0\0\x4\xff\0\0\x3\xff\0\0\x3t\0\0\x1\xee\0\0\x4\xf9\0\0\x3\xf9\0\0\0\0\0\0\0\0\x5\0)
+QClient_Client_ClientWindow_state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x1\x86\0\0\x2\f\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
+
+[Client]
+macAddress=8C:89:A5:57:A6:41
+simulationMode=true

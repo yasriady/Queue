@@ -1,0 +1,27 @@
+#centralWidget
+{
+    background-color: black;
+    color: white;
+}
+
+#footer
+{
+}
+
+#runningText
+{
+    background-color: rgb(0, 0, 127);
+    color: GoldenRod;
+    font: 0pt "Arial";
+    font-weight: bold;
+}
+
+#clock
+{
+    color: white;
+}
+
+#connectIcon
+{
+    color: green;
+}

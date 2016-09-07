@@ -37,6 +37,9 @@ private:
     Ticket *m_ticket;
     DCallerSound *m_sound;
 
+protected:
+    virtual void customInit();
+
 };
 
 #endif // MAINWINDOW_H

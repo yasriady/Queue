@@ -17,7 +17,7 @@ class Server : public QTcpServer
     Q_OBJECT
 public:
     explicit Server(QObject *parent = Q_NULLPTR);
-    //virtual ~Server();
+    virtual ~Server();
 
 
 };

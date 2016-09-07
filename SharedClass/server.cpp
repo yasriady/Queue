@@ -6,3 +6,8 @@ Server::Server(QObject *parent)
 {
 
 }
+
+Server::~Server()
+{
+
+}

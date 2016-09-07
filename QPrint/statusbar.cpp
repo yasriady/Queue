@@ -1,7 +1,7 @@
 #include "statusbar.h"
 
 StatusBar::StatusBar(QWidget *parent)
-    : QStatusBar(parent)
+    : DStatusBar(parent)
 {
     m_sbWidget = new StatusBarWidget(this);
     addPermanentWidget(m_sbWidget, 1);

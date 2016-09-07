@@ -61,7 +61,6 @@ private:
 
     bool m_simulationMode;
     QString m_macAddress;
-    QString m_windowName;
 
 //    bool m_connected;
 //    QString m_message;
@@ -84,6 +83,9 @@ public:
     // Trivia
     QWidget *getWidget();
     void doLogin(); // meant to connect to server
+
+protected:
+    virtual void customInit();
 
 };
 

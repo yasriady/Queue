@@ -9,15 +9,18 @@
 #ifndef DB_H
 #define DB_H
 
-#include <dbmanager.h>
+#include "../../QtLib/QtDB/dbmanager.h"
 #include "config.h"
 
 class DB : public DBManager
 {
 public:
-    DB();
 
-public:
+    DB();
+    ~DB();
+
+    void test();
+
     const QString getNodeName(const QString &macAddress);
     const QString getDisplayedName(const QString &nodeName);
     const QString getGroupCode( const QString &nodeName );

@@ -12,10 +12,11 @@
 #include <QObject>
 #include <QStatusBar>
 #include "statusbarwidget.h"
+#include <Inc/StatusBar>
 
 #define SB      ui->statusBar->sbWidget()
 
-class StatusBar : public QStatusBar
+class StatusBar : public DStatusBar
 {
 public:
     explicit StatusBar(QWidget *parent = Q_NULLPTR);

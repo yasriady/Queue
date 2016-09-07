@@ -32,7 +32,6 @@ HEADERS  += \
     client.h \
     mainwindow.h \
     statusbar.h \
-    ../WiFiClient_LCD/arduino.h \
     ../SharedClass/ndhelper.h \
     ../SharedClass/rdhelper.h \
     ../SharedClass/config.h

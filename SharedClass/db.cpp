@@ -3,11 +3,21 @@
 DB::DB()
     : DBManager()
 {
+}
 
+DB::~DB()
+{
+}
+
+void DB::test()
+{
+    qDebug() << __PRETTY_FUNCTION__;
 }
 
 const QString DB::getNodeName(const QString &macAddress)
 {
+    //const QString &sql = " SELECT * FROM NodeList WHERE mac_address='A6:DF:8B:7D:DD:CF'; ";
+    //QString nodeName = getText( sql, "node_name");
     QString nodeName = getText("node_name", NodeList, "mac_address='" + macAddress + "'");
     return ( nodeName=="" ? NOTFOUND : nodeName) ;
 }

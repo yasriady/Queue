@@ -6,7 +6,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    init();
 
     m_ticket = ui->ticket;
     mkDB;
@@ -73,4 +72,10 @@ void MainWindow::slotMakeTicket()
     QPushButton *button = qobject_cast<QPushButton*>(sender());
     const QString groupCode = button->property("groupCode").toString();
     m_ticket->createNew(groupCode);
+}
+
+void MainWindow::customInit()
+{
+    m_windowName = "MainWindow";
+    setWindowTitle("QPrint");
 }

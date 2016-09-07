@@ -1,0 +1,28 @@
+QWidget {
+    color: red;
+    font-weight: bold;
+    }
+
+#service {
+    color: cyan;
+    background-color: darkRed;
+    }
+
+#queueNo {
+    color: yellow;
+    }
+
+#displayedName {
+    color: cyan;
+    background-color: red;
+    }
+
+#status {
+    color: blue;
+    background-color: red;
+    }
+
+#widget {
+    color: white;
+    background-color: red;
+    }
