@@ -10,8 +10,9 @@
 #define TICKET_H
 
 #include <QFrame>
-#include "../SharedClass/db.h"
+#include "app_globals.h"
 #include <Config>
+//#include <QJsonObject>
 
 #define TICKETDIR       APPDIR + SEP + "Ticket" + SEP + TODAY_ + SEP
 #define TICKETFILE      TICKET(groupCode, queueNo) + ".pdf"
@@ -28,13 +29,13 @@ public:
     explicit Ticket(QWidget *parent = 0);
     ~Ticket();
 
-    void setDB(DB* db);
+    //void setDB(DB* db);
     void showLastTicket();
     void createNew(const QString &groupCode);
 
 private:
     Ui::Ticket *ui;
-    M_DB;
+    //M_DB;
     QJsonObject m_rcd;
     QString m_template;
     void makeTemplate();

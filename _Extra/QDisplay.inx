@@ -1,19 +1,50 @@
 [General]
 DStatusBar=true
-QDisplay_MainWindow__geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0_\0\0\0\x42\0\0\x2\x92\0\0\x2\x11\0\0\0\x65\0\0\0W\0\0\x2\x8c\0\0\x2\v\0\0\0\0\0\0\0\0\x5\0)
-QDisplay_MainWindow__state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x2(\0\0\x1\x9f\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
 chime=true
 speech=true
 
-[CallerSound]
-chime=true
-speech=true
+[MainWindow]
+geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x2\0\0\0\0\0P\0\0\0\x30\0\0\x2\xab\0\0\x1\xc9\0\0\0V\0\0\0\x45\0\0\x2\xa5\0\0\x1\xc3\0\0\0\0\0\0\0\0\x5\0)
+state=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\0\0\0\x2P\0\0\x1i\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\0)
 
-[DMainWindow]
-nodesVerticalStretchFactor=55
+[MainWindowBase]
+nodesVerticalStretchFactor=25
 
-[QStatusBar]
-DStatusBar=true
+[NODE_01]
+visible=true
+
+[NODE_02]
+visible=true
+
+[NODE_03]
+visible=true
+
+[NODE_04]
+visible=true
+
+[NODE_05]
+visible=true
+
+[NODE_06]
+visible=false
+
+[NODE_07]
+visible=false
+
+[NODE_08]
+visible=false
+
+[NODE_09]
+visible=false
+
+[NODE_10]
+visible=false
+
+[bigNode]
+visible=true
+
+[logger]
+visible=true
 
 [mainPic]
 pixmapFile=922402-yummy-fruit-wallpaper_B.jpg
@@ -21,8 +52,13 @@ pixmapFile=922402-yummy-fruit-wallpaper_B.jpg
 [runningText]
 padQty=35
 show=true
-started=false
-timer=350
+started=true
+timer=550
+visible=true
 
 [stackedWidget]
+currentIndex=0
 stackedWidget=0
+
+[statusBar]
+visible=true

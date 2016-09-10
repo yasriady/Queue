@@ -1,12 +1,21 @@
 #include "mainwindow.h"
 #include <Inc/Application>
 #include <Inc/CallerSound>
+#include "dialog.h"
+#include "app_globals.h"
 
 int main(int argc, char *argv[])
 {
     Application a(argc, argv);
-    MainWindow w;
-    w.show();
+    //MainWindow w;
+    //w.show();
+
+    m_config = new DSettings(CONFIGFILE);
+    m_confix = new DSettings(CONFIXFILE);
+    m_dB = new DB();    // config instantiate first, because DB need them
+
+    Dialog d;
+    d.exec();
     return a.exec();
 }
 

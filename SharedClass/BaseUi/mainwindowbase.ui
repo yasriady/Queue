@@ -208,9 +208,6 @@
            <verstretch>1</verstretch>
           </sizepolicy>
          </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(170, 170, 255);</string>
-         </property>
         </widget>
        </item>
       </layout>
@@ -355,10 +352,10 @@
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
          <property name="yFactor" stdset="0">
-          <bool>false</bool>
+          <bool>true</bool>
          </property>
          <property name="xFactor" stdset="0">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -411,8 +408,6 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../../../QtLib/QtLib/Resources/resources.qrc"/>
-  <include location="../../../QtLib/QtLib/Resources/resources.qrc"/>
   <include location="../../../QtLib/QtLib/Resources/resources.qrc"/>
  </resources>
  <connections/>

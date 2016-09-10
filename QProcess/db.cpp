@@ -18,56 +18,56 @@ const QString DB::getNodeName(const QString &macAddress)
 {
     //const QString &sql = " SELECT * FROM NodeList WHERE mac_address='A6:DF:8B:7D:DD:CF'; ";
     //QString nodeName = getText( sql, "node_name");
-    QString nodeName = getText("node_name", NodeList, "mac_address='" + macAddress + "'");
+    QString nodeName = getText("node_name", TBLNODELIST, "mac_address='" + macAddress + "'");
     return ( nodeName=="" ? NOTFOUND : nodeName) ;
 }
 
 const QString DB::getDisplayedName(const QString &nodeName)
 {
-    QString displayName = getText("displayed_name", NodeList, "node_name='" + nodeName + "'");
+    QString displayName = getText("displayed_name", TBLNODELIST, "node_name='" + nodeName + "'");
     return ( displayName=="" ? NOT_REGISTERED : displayName) ;
 }
 
 const QString DB::getGroupCode(const QString &nodeName)
 {
-    QString groupCode = getText("group_code", NodeList, "node_name='" + nodeName + "'");
+    QString groupCode = getText("group_code", TBLNODELIST, "node_name='" + nodeName + "'");
     return ( groupCode == "" ? NA : groupCode) ;
 }
 
 const QString DB::getService(const QString &groupCode)
 {
-    QString groupAssignment = getText("service", GroupList, "group_code='" + groupCode + "'");
+    QString groupAssignment = getText("service", TBLGROUPLIST, "group_code='" + groupCode + "'");
     return ( groupAssignment == "" ? NA : groupAssignment) ;
 }
 
 const QString DB::getStatus(const QString &nodeName)
 {
-    QString status = getText("status", NodeList, "node_name='" + nodeName + "'");
+    QString status = getText("status", TBLNODELIST, "node_name='" + nodeName + "'");
     return ( status == "" ? NA : status) ;
 }
 
 const QString DB::getMacAddress(const QString &nodeName)
 {
-    QString macAddress = getText("mac_address", NodeList, "node_name='" + nodeName + "'");
+    QString macAddress = getText("mac_address", TBLNODELIST, "node_name='" + nodeName + "'");
     return ( macAddress == "" ? NA : macAddress) ;
 }
 
 uint8_t DB::getNodeId(const QString &nodeName)
 {
-    QString nodeId = getText("node_id", NodeList, "node_name='" + nodeName + "'");
+    QString nodeId = getText("node_id", TBLNODELIST, "node_name='" + nodeName + "'");
     return ( nodeId == "" ? 0 : nodeId.toInt() ) ;
 }
 
 uint8_t DB::getPortNo(const QString &nodeName)
 {
-    QString portNo = getText("port_no", NodeList, "node_name='" + nodeName + "'");
+    QString portNo = getText("port_no", TBLNODELIST, "node_name='" + nodeName + "'");
     return ( portNo == "" ? 0 : portNo.toInt() ) ;
 }
 
 // get current queueNo from NodeList table
 uint16_t DB::getQueueNo_1(const QString &nodeName)
 {
-    QString queueNo = getText("queue_no", NodeList, "node_name='" + nodeName + "'");
+    QString queueNo = getText("queue_no", TBLNODELIST, "node_name='" + nodeName + "'");
     return ( queueNo == "" ? 0 : queueNo.toInt() ) ;
 }
 
@@ -175,9 +175,50 @@ const QJsonObject DB::getRecordBySql(const QString &sql)
     return rcd;
 }
 
+const NDHelper DB::getNodeInfoByName2(const QString &nodeName)
+{
+    QJsonObject rcdNode = getNodeInfoByName( nodeName );
+    NDHelper m_dt;
+
+    // fixed
+    m_dt.setMacAddress(                rcdNode["mac_address"]      .toString()             );
+    m_dt.setNodeName(                  rcdNode["node_name"]        .toString()             );
+    m_dt.setNodeId(        (uint8_t)   rcdNode["node_id"]          .toString() .toInt()    );
+    m_dt.setDisplayedName(             rcdNode["displayed_name"]   .toString()             );
+    m_dt.setIpAddressClient(           QString()                                           );  // reserved
+    m_dt.setGroupCode(                 rcdNode["group_code"]       .toString()             );
+    m_dt.setPortNo(        (uint8_t)   rcdNode["port_no"]          .toString() .toInt()    );  // reserved
+    m_dt.setOperatorName(              rcdNode["operator_name"]    .toString()             );
+    m_dt.setService(                   rcdNode["service"]          .toString()             );
+
+    QJsonObject rcdQueue = getLastQueue2( nodeName );
+
+    // var
+    m_dt.setRequest(                   REQUEST::INIT                                       );
+    m_dt.setRequestText(               getTaxonomy( REQUEST_, REQUEST::INIT )              );  // reserved
+    m_dt.setClientRequest(             CLIREQUEST::CLI_INIT                                );
+    m_dt.setClientRequestText(         QString()                                           );  // reserved
+    m_dt.setServerAnswer(              SRVANSWER::INITOK                                   );  // reserved
+    m_dt.setServerAnswerText(          QString()                                           );  // reserved
+    m_dt.setQueueNo(       (uint16_t)  rcdQueue["queue_no"]         .toString() .toInt()   );
+    m_dt.setQueueNoText(               QString()                                           );  // dummy
+    m_dt.setMessage(                   QString()                                           );  // reserved
+    m_dt.setConnected(                 false                                               );  // reserved
+    m_dt.setBusy(                      false                                               );  // reserved
+    m_dt.setRESULT(                    false                                               );  // reserved
+    m_dt.setCount(         (uint8_t)   0                                                   );  // reserved
+    m_dt.setCalledCount(   (uint8_t)   rcdQueue["called_count"]     .toString() .toInt()   );
+    m_dt.setDateText(                  QString()                                           );  // reserved
+    m_dt.setCallingTimeText(           rcdQueue["calling_time"]     .toString()            );
+    m_dt.setProcessTimeText(           rcdQueue["process_time"]     .toString()            );
+    m_dt.setNumOfWaiting(  (uint16_t)  getNumOfWaiting(  m_dt.groupCode() )                );
+
+    return m_dt;
+}
+
 const QString DB::getOpr(const QString &nodeName)
 {
-    QString opr = getText("operator_name", NodeList, "node_name='" + nodeName + "'");
+    QString opr = getText("operator_name", TBLNODELIST, "node_name='" + nodeName + "'");
     return ( opr == "" ? 0 : opr ) ;
 }
 

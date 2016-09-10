@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>aMainWindow</string>
   </property>
   <property name="windowIcon">
    <iconset resource="../../QtLib/QtLib/Resources/resources.qrc">
@@ -51,7 +51,7 @@
             <enum>QFrame::Raised</enum>
            </property>
            <property name="currentIndex">
-            <number>0</number>
+            <number>1</number>
            </property>
            <widget class="QWidget" name="picturePage">
             <layout class="QGridLayout" name="gridLayout_4">
@@ -82,7 +82,7 @@
              </item>
             </layout>
            </widget>
-           <widget class="DLogger" name="logger"/>
+           <widget class="QWidget" name="logger"/>
            <widget class="QWidget" name="testingPage">
             <layout class="QGridLayout" name="gridLayout_3">
              <item row="0" column="0">
@@ -177,12 +177,6 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>DLogger</class>
-   <extends>QWidget</extends>
-   <header>Inc/Logger</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>DStackedWidget</class>
    <extends>QStackedWidget</extends>
    <header>Inc/StackedWidget</header>
@@ -206,7 +200,6 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../../QtLib/QtLib/Resources/resources.qrc"/>
   <include location="../../QtLib/QtLib/Resources/resources.qrc"/>
   <include location="../../QtLib/QtLib/Resources/resources.qrc"/>
  </resources>

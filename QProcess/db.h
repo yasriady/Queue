@@ -11,6 +11,7 @@
 
 #include "../../QtLib/QtDB/dbmanager.h"
 #include "config.h"
+#include "ndhelper.h"
 
 class DB : public DBManager
 {
@@ -54,6 +55,7 @@ public:
     const QJsonObject getNodeInfo(const QString &macAddress);
     const QJsonObject getNodeInfoByName(const QString &nodeName);
     const QJsonObject getRecordBySql(const QString &sql);
+    const NDHelper getNodeInfoByName2(const QString &nodeName);
 
 };
 

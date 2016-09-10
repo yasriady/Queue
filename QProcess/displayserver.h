@@ -4,28 +4,28 @@
 #include <QObject>
 #include <QTcpServer>
 #include <QTcpSocket>
-#include "../SharedClass/config.h"
-#include "../SharedClass/ndhelper.h"
-#include "../SharedClass/rdhelper.h"
-#include "../SharedClass/db.h"
-#include "node.h"
-#include "bignode.h"
-#include "../SharedClass/callersound.h"
-#include "RemoteDisplay/remotedisplay.h"
+#include "config.h"
+#include "ndhelper.h"
+#include "rdhelper.h"
+#include "app_globals.h"
+//#include "node.h"
+//#include "bignode.h"
+#include "callersound.h"
+#include "remotedisplay.h"
 
 class DisplayServer : public QObject
 {
     Q_OBJECT
 public:
-    explicit DisplayServer(DB *db, BigNode *bigNode, QObject *parent = 0);
+    explicit DisplayServer(QObject *parent = 0);
     ~DisplayServer();
 
-    void test();
-    void testDisconnect();
-
-    void setStatusBarWidget(StatusBarWidget *statusBarWidget);
+    //void setStatusBarWidget(StatusBarWidget *statusBarWidget);
+    RemoteDisplay *remoteDisplay() const;
 
 signals:
+    void signalDataReady(NDHelper dt);
+    void signalLog(QString string);
 
 public slots:
     void slotNewConnection();
@@ -38,14 +38,14 @@ private:
 //    bool m_init;
 //    bool m_busy;
 //    QString m_msg;
-    DB *m_db;
+//    DB *m_db;
     NDHelper m_dt;
     RDHelper m_rd;
-    Node *m_node;
-    BigNode *m_bigNode;
+    //Node *m_node;
+    //BigNode *m_bigNode;
     CallerSound *m_callerSound;
     RemoteDisplay *m_remoteDisplay;
-    StatusBarWidget *m_statusBarWidget;
+    //StatusBarWidget *m_statusBarWidget;
 
 };
 

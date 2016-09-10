@@ -11,7 +11,7 @@
 
 #include <QObject>
 #include <QString>
-#include "../SharedClass/config.h"
+#include "config.h"
 
 //#define DT                          m_dt->dt()
 //#define TICKET(groupCode, queueNo)  QString( "%1-%2" ).arg(groupCode).arg(queueNo)

@@ -13,7 +13,7 @@ BigNode::~BigNode()
 
 void BigNode::customInit()
 {
-    m_windowName = "BigNode";
+    //m_windowName = "BigNode";
     //setWindowTitle("");
 }
 

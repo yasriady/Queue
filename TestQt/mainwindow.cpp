@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    customInit(this, "MainWindow", "MainWindow", true);
+
     m_callerSound = new DCallerSoundAlsa();
     m_db = new DBManager();
 
@@ -60,11 +62,11 @@ void MainWindow::on_pushButton_aplay_clicked()
     m_callerSound->call("lima");
 }
 
-void MainWindow::customInit()
-{
-    m_windowName = "MainWindow";
-    setWindowTitle("Test");
-}
+//void MainWindow::customInit()
+//{
+//    m_windowName = "MainWindow";
+//    setWindowTitle("Test");
+//}
 
 void MainWindow::on_pushButton_4_clicked()
 {
@@ -87,10 +89,22 @@ void MainWindow::on_pushButton_7_clicked()
 
 void MainWindow::on_pushButton_8_clicked()
 {
-        ui->dRunningText->setDb(m_db);
+    ui->dRunningText->setDb(m_db);
 }
 
 void MainWindow::on_pushButton_9_clicked()
 {
     ui->dRunningText->stop();
+}
+
+void MainWindow::on_pushButton_10_clicked()
+{
+    __PF(objectName());
+}
+
+void MainWindow::on_pushButton_11_clicked()
+{
+    Form *f = new Form();
+    f->show();
+    //f->toggleVisibility(f);
 }

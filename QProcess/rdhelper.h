@@ -10,7 +10,7 @@
 #define RDHELPER_H
 
 #include <QObject>
-#include "../SharedClass/config.h"
+#include "config.h"
 
 #define RD               m_rd->rd()
 

@@ -1,7 +1,7 @@
 #ifndef BIGNODE_H
 #define BIGNODE_H
 
-#include "../SharedClass/BaseUi/bignodebase.h"
+#include "BaseUi/bignodebase.h"
 
 namespace Ui {
 class BigNode;

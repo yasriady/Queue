@@ -15,15 +15,16 @@
 #include <QNetworkInterface>
 #include <QTimer>
 #include <QMainWindow>
-#include "../SharedClass/config.h"
+#include "config.h"
+#include "globals.h"
 
 #include <QFrame>
 #include <QLabel>
 #include <QThread>
 #include <QLineEdit>
 #include <QGraphicsDropShadowEffect>
-#include "../SharedClass/ndhelper.h"
-#include "../SharedClass/rdhelper.h"
+#include "ndhelper.h"
+#include "rdhelper.h"
 
 namespace Ui {
 class Client;
@@ -84,8 +85,6 @@ public:
     QWidget *getWidget();
     void doLogin(); // meant to connect to server
 
-protected:
-    virtual void customInit();
 
 };
 

@@ -10,7 +10,7 @@
 #define MAINWINDOW_H
 
 #include <MainWindow/dmainwindow.h>
-#include "../SharedClass/db.h"
+#include "globals.h"
 #include "ticket.h"
 #include <Inc/PushButton>
 #include <Inc/CallerSound>
@@ -33,12 +33,12 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    M_DB;
+    //M_DB;
     Ticket *m_ticket;
     DCallerSound *m_sound;
 
 protected:
-    virtual void customInit();
+    //virtual void customInit();
 
 };
 

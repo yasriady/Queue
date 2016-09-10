@@ -6,14 +6,17 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    customInit(this, "MainWindow", "MainWindow", true);
 
     m_ticket = ui->ticket;
-    mkDB;
-    m_ticket->setDB(m_db);
+
+    //mkDB;
+
+    //m_ticket->setDB(m_dB);
     m_sound = new DCallerSound(this);
 
     const QString &sql = " SELECT * FROM GroupList ";
-    QJsonObject records = m_db->getRecord3(sql);
+    QJsonObject records = m_dB->getRecord3(sql);
 
     QVBoxLayout *layout = new QVBoxLayout(ui->frame_2);
     layout->setMargin(20);
@@ -41,20 +44,22 @@ MainWindow::MainWindow(QWidget *parent) :
     }
     ui->frame_2->setLayout(layout);
     // update status bar
-    mkCONFIG;
-    SB->setConnText( m_db->isConnected() );
-    SB->setConnPixmap( m_db->isConnected() );
+    //mkCONFIG;
+    SB->setConnText( m_dB->isConnected() );
+    SB->setConnPixmap( m_dB->isConnected() );
     SB->setDbBackend(DRIVER_+ ":" + DBSRV_);
 
-    mkCONFIX;
-    QString picFilename = confx->string( KEY("mainPic")  );
+    //mkCONFIX;
+    QString picFilename = m_confix->string( KEY3(this, "mainPic") );
     ui->mainPic->setPixmapFile(picFilename);
 }
 
 MainWindow::~MainWindow()
 {
+    // global variable destructed here!
+    delete m_dB;
+
     delete m_sound;
-    delete m_db;
     delete ui;
 }
 
@@ -74,8 +79,8 @@ void MainWindow::slotMakeTicket()
     m_ticket->createNew(groupCode);
 }
 
-void MainWindow::customInit()
-{
-    m_windowName = "MainWindow";
-    setWindowTitle("QPrint");
-}
+//void MainWindow::customInit()
+//{
+//    m_windowName = "MainWindow";
+//    setWindowTitle("QPrint");
+//}

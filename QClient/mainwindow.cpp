@@ -6,11 +6,14 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    customInit(this, "MainWindow", "QClient", true);
     makeNode();
 }
 
 MainWindow::~MainWindow()
 {
+    if( m_config != NULL ) delete m_config;
+    if( m_confix != NULL ) delete m_confix;
     delete ui;
 }
 

@@ -23,11 +23,13 @@ void NodeBase::updateUi(NDHelper &dt)
     ui->queueNo->setText( m_dt.queueNoText() );
 
     // stylesheet
-    QString qssFilename = EXTRADIR + "qss" + SEP  + APPNAME + "_" + m_windowName + "_" + m_dt.requestText() + ".qss";
+    QString qssFilename = EXTRADIR + "qss" + SEP  + APPNAME + "_" + objectName();
+    qssFilename = qssFilename.left( qssFilename.length()-3 ) + "_" + m_dt.requestText() + ".qss";
+
     QString styleSheet = "";
     if( m_dt.request()==REQUEST::CALLING )
-        styleSheet = textFromFile(qssFilename);
-    setStyleSheet(styleSheet);
+        styleSheet = textFromFile(qssFilename, true);
+    setStyleSheet2(this, true, styleSheet);
 
 }
 

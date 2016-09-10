@@ -6,14 +6,17 @@ Client::Client(QWidget *parent, QLineEdit *mac) :
     ui(new Ui::Client)
 {
     ui->setupUi(this);
+    customInit(this, "ClientWindow", "QClient", true);
 
     m_dt = new NDHelper();
     m_rd = new RDHelper();
 
     m_windowName = property("windowName").toString();
-    mkCONFIG; mkCONFIX;
-    m_hostName = confg->string( KEY("displayServer"), "192.168.1.2" );
-    m_port = confg->integr( KEY("displayServerPort"), 9000 );
+    //mkCONFIG; mkCONFIX;
+
+
+    m_hostName = m_config->string( KEY3(this, "displayServer"), "192.168.1.2" );
+    m_port = m_config->integr( KEY3(this, "displayServerPort"), 9000 );
     m_tcpSocket = new MySocket(m_hostName, m_port);
     connect( m_tcpSocket, SIGNAL(readyRead()), this, SLOT(slotReadyRead()) );
 
@@ -21,11 +24,11 @@ Client::Client(QWidget *parent, QLineEdit *mac) :
     //connect( timer, SIGNAL(timeout()), this, SLOT(slotMyTimer()) );
     //timer->start( mkRandom(99, 562) );  // random timerize
 
-    m_simulationMode = confx->boolean(KEY("simulationMode"), true) ; //property("simulationMode").toBool();
+    m_simulationMode = m_confix->boolean(KEY3(this, "simulationMode"), true) ; //property("simulationMode").toBool();
 
     // set macAddress
     if( m_simulationMode ) {
-        m_macAddress = confx->string(KEY("macAddress"), "8C:89:A5:57:A6:41"); //property("macAddress").toString();
+        m_macAddress = m_confix->string(KEY3(this, "macAddress"), "8C:89:A5:57:A6:41"); //property("macAddress").toString();
     } else {
         foreach( QNetworkInterface interface, QNetworkInterface::allInterfaces() )
         {
@@ -64,6 +67,8 @@ Client::Client(QWidget *parent, QLineEdit *mac) :
 
 Client::~Client()
 {
+    if( m_config != NULL ) delete m_config;
+    if( m_confix != NULL ) delete m_confix;
     delete m_dt;
     delete m_rd;
     delete m_tcpSocket;
@@ -236,12 +241,6 @@ QWidget *Client::getWidget()
 
 void Client::doLogin()
 {
-}
-
-void Client::customInit()
-{
-    m_windowName = "Client";
-    setWindowTitle("QClient");
 }
 
 void Client::on_calling_clicked()

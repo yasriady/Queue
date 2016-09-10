@@ -3,8 +3,8 @@
 
 #include <QWidget>
 #include <Inc/Widget>
-#include "../SharedClass/db.h"
-#include "../SharedClass/ndhelper.h"
+#include "app_globals.h"
+#include "ndhelper.h"
 
 namespace Ui {
 class NodeBase;
@@ -25,7 +25,7 @@ public:
 
 protected:
     Ui::NodeBase *ui;
-    DB *m_db;
+    //DB *m_db;
     NDHelper m_dt;
     QString m_nodeName;
 

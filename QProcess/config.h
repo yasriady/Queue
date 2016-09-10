@@ -25,7 +25,7 @@
 
 // PC --------
 
-#define DISPLAYSERVER               confg->string( KEY("DisplayServer"), "192.168.1.2")
+#define DISPLAYSERVER               m_config->string( KEY3(this, "DisplayServer"), "192.168.1.2")
 #define DISPLAYSERVERPORT           9000 // confg->integr( KEY("DisplayServerPort"), 9000)
 #define REMOTEDISPLAYPORT           9100 // confg->integr( KEY("RemoteDisplayPort"), 9100)
 
@@ -33,9 +33,9 @@
 #define ERR_SRVBUSY                 "ERR_SRVBUSY"
 #define ERR_NOTREGISTERED           "ERR_NOTREGISTERED"
 
-#define GroupList                   "GroupList"
-#define NodeList                    "NodeList"
-#define PrintedQueue                "PrintedQueue"
+#define TBLGROUPLIST                   "GroupList"
+#define TBLNODELIST                    "NodeList"
+#define TBLPRINTEDQUEUE                "PrintedQueue"
 #define MAXCALL                     2
 
 #define  LOGIN_                     "LOGIN"
@@ -43,7 +43,7 @@
 #define  PROCESS_                   "PROCESS"
 
 #define REQUEST_                    "REQUEST"
-#define REQUESTTEXT(expr)           m_db->getTaxonomy( REQUEST_, expr )
+#define REQUESTTEXT(expr)           m_dB->getTaxonomy( REQUEST_, expr )
 
 //#define EXTERADIR           QApplication::applicationDirPath() + QDir::separator() + "Extra" + QDir::separator()
 //#define TICKETFORMAT        QString( "%1-%2").arg(groupCode).arg( queueNo.toInt() , 3, 10, QChar('0') )

@@ -15,31 +15,31 @@ Ticket::~Ticket()
     delete ui;
 }
 
-void Ticket::setDB(DB *db)
-{
-    m_db = db;
-}
+//void Ticket::setDB(DB *db)
+//{
+//    m_db = db;
+//}
 
 void Ticket::showLastTicket()
 {
-    m_rcd = m_db->getLastPrintedQueue();
+    m_rcd = m_dB->getLastPrintedQueue();
     updateTicket();
 }
 
 void Ticket::createNew(const QString &groupCode)
 {
-    int nextQueueNo = m_db->getMaxQueueNo(groupCode) + 1;
+    int nextQueueNo = m_dB->getMaxQueueNo(groupCode) + 1;
     const QString &sql = QString( " INSERT INTO PrintedQueue(group_code, queue_no) VALUES('%1', %2); " ).arg(groupCode).arg(nextQueueNo);
-    m_db->updateRecord( sql );
+    m_dB->updateRecord( sql );
     showLastTicket();
     ui->printPreview->print();
 }
 
 void Ticket::makeTemplate()
 {
-    mkCONFIX;
+    //mkCONFIX;
     //QString fileName = EXTRADIR + confg->string("TICKET/Template");
-    QString ticketTemplate = confx->string( KEY("ticketTemplate"), "TicketTemplate.html" );
+    QString ticketTemplate = m_confix->string( KEY3(this, "ticketTemplate"), "TicketTemplate.html" );
     ticketTemplate = EXTRADIR + ticketTemplate;
     QFile file(ticketTemplate);
     file.open( QIODevice::ReadOnly );
@@ -50,7 +50,7 @@ void Ticket::updateTicket()
 {
 
     const QString &groupCode = m_rcd["group_code"].toString();
-    const QString &numOfWaiting = QString::number( m_db->getNumOfWaiting( groupCode ) );
+    const QString &numOfWaiting = QString::number( m_dB->getNumOfWaiting( groupCode ) );
     const int &queueNo = m_rcd["queue_no"].toString().toInt(); // Ddy: QJsonObject cannot direct convert to String, toStr() was now worked?
 
     const QString &_date        = m_rcd["date"].toString();

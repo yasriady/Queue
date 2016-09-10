@@ -1,0 +1,12 @@
+#ifndef QPROCESS_GLOBAL_H
+#define QPROCESS_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QPROCESS_LIBRARY)
+#  define QPROCESSSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QPROCESSSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QPROCESS_GLOBAL_H

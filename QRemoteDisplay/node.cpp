@@ -1,12 +1,12 @@
 #include "node.h"
 #include "ui_nodebase.h"
 
-Node::Node(const QString &nodeName, DB *db, QWidget *parent) :
+Node::Node(const QString &nodeName, QWidget *parent) :
     NodeBase(parent)
 {
     m_nodeName = nodeName;
     setObjectName(m_nodeName);
-    m_db = db;
+    //m_db = db;
     initData();
     updateUi(m_dt);
 
@@ -18,7 +18,7 @@ Node::~Node()
 
 void Node::initData()
 {
-    QJsonObject rcdNode = m_db->getNodeInfoByName( m_nodeName );
+    QJsonObject rcdNode = m_dB->getNodeInfoByName( m_nodeName );
 
     // fixed
     m_dt.setMacAddress(                rcdNode["mac_address"]      .toString()             );
@@ -31,7 +31,7 @@ void Node::initData()
     m_dt.setOperatorName(              rcdNode["operator_name"]    .toString()             );
     m_dt.setService(                   rcdNode["service"]          .toString()             );
 
-    QJsonObject rcdQueue = m_db->getLastQueue2( m_nodeName );
+    QJsonObject rcdQueue = m_dB->getLastQueue2( m_nodeName );
 
     // var
     m_dt.setRequest(                   REQUEST::INIT                                       );
@@ -51,7 +51,7 @@ void Node::initData()
     m_dt.setDateText(                  QString()                                           );  // reserved
     m_dt.setCallingTimeText(           rcdQueue["calling_time"]     .toString()            );
     m_dt.setProcessTimeText(           rcdQueue["process_time"]     .toString()            );
-    m_dt.setNumOfWaiting(  (uint16_t)  m_db->getNumOfWaiting(  m_dt.groupCode() )          );
+    m_dt.setNumOfWaiting(  (uint16_t)  m_dB->getNumOfWaiting(  m_dt.groupCode() )          );
 }
 
 //void Node::updateUi(NDHelper &dt)
@@ -74,7 +74,7 @@ void Node::initData()
 
 void Node::customInit()
 {
-    m_windowName = "Node";
+    //m_windowName = "Node";
     //setWindowTitle("");
 }
 

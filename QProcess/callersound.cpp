@@ -5,9 +5,9 @@ CallerSound::CallerSound(QObject *parent) : QObject(parent)
     m_callerSound = new DCallerSoundAlsa(this);
    connect( m_callerSound, SIGNAL(signalSoundFinish()), this, SLOT(slotSoundFinish()) );
 
-   mkCONFIX;
-   m_chime = confx->boolean( KEY("chime"), true );
-   m_speech = confx->boolean( KEY("speech"), true );
+   //mkCONFIX;
+   m_chime = m_confix->boolean( KEY3(this, "chime"), true );
+   m_speech = m_confix->boolean( KEY3(this, "speech"), true );
 
 }
 

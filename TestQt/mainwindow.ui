@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>440</width>
-    <height>434</height>
+    <width>528</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>3</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -303,7 +303,7 @@
          <string>PushButton</string>
         </property>
        </widget>
-       <widget class="DLabel" name="LabelXX">
+       <widget class="DLabel" name="Label">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -316,6 +316,42 @@
          <string>TextLabel</string>
         </property>
        </widget>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>10</y>
+          <width>80</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>customInit();</string>
+        </property>
+       </widget>
+       <widget class="DLogger" name="logger" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>461</width>
+          <height>181</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>10</y>
+          <width>80</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>
@@ -326,7 +362,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>440</width>
+     <width>528</width>
      <height>20</height>
     </rect>
    </property>
@@ -367,6 +403,12 @@
    <class>DLabel</class>
    <extends>QLabel</extends>
    <header>Inc/Label</header>
+  </customwidget>
+  <customwidget>
+   <class>DLogger</class>
+   <extends>QWidget</extends>
+   <header>Inc/Logger</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

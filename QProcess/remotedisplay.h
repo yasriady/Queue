@@ -2,12 +2,12 @@
 #define REMOTEDISPLAY_H
 
 #include <QObject>
-#include "../SharedClass/config.h"
+#include "config.h"
 #include <dsettings.h>
-#include "../SharedClass/server.h"
-#include "../SharedClass/ndhelper.h"
+#include "server.h"
+#include "ndhelper.h"
 #include "QTcpSocket"
-#include "../SharedClass/StatusBar/statusbarwidget.h"
+//#include "StatusBar/statusbarwidget.h"
 
 class RemoteDisplay : public QObject
 {
@@ -17,10 +17,11 @@ public:
     ~RemoteDisplay();
 
     void send(const NDHelper &dt);
-    void setStatusBarWidget(StatusBarWidget *statusBarWidget) { m_statusBarWidget = statusBarWidget; }
+    //void setStatusBarWidget(StatusBarWidget *statusBarWidget) { m_statusBarWidget = statusBarWidget; }
     void disconnectClient();
 
 signals:
+    void signalConnectionInfo(QString string);
 
 public slots:
 
@@ -32,7 +33,7 @@ private Q_SLOTS:
 private:
     Server *m_tcpServer;
     QMap<QTcpSocket*, QTcpSocket*> m_clientList;
-    StatusBarWidget *m_statusBarWidget;
+    //StatusBarWidget *m_statusBarWidget;
 
 };
 

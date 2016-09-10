@@ -2,10 +2,11 @@
 #define CALLERSOUND_H
 
 #include <QObject>
-#include <../SharedClass/ndhelper.h>
+#include <ndhelper.h>
 #include <Inc/CallerSoundAlsa>
 #include <Inc/Object>
-#include <Inc/Setting>
+//#include <Inc/Setting>
+#include "globals.h"
 
 class CallerSound : public QObject, public DObject
 {

@@ -3,8 +3,8 @@
 
 #include <Inc/MainWindow>
 #include <QFrame>
-#include <node.h>
-#include "../db.h"
+#include "globals.h"
+#include "node.h"
 
 namespace Ui {
 class MainWindowBase;
@@ -20,13 +20,14 @@ public:
 
 protected:
     Ui::MainWindowBase *ui;
+    //DB* m_db;
     void makeNodes();
-    DB* m_db;
 
 private slots:
     virtual void on_pushButton_CONNECT_clicked() = 0;
     virtual void on_pushButton_WRITEBACK_clicked() = 0;
     virtual void on_pushButton_DISCONNECT_clicked() = 0;
+    void windowLoaded();
 
 private:
 

@@ -2,9 +2,9 @@
 #define BIGNODEBASE_H
 
 #include <QWidget>
-#include "../db.h"
+//#include "db.h"
 #include <Inc/Widget>
-#include "../SharedClass/ndhelper.h"
+#include "ndhelper.h"
 
 namespace Ui {
 class BigNodeBase;
@@ -24,7 +24,7 @@ protected:
     Ui::BigNodeBase *ui;
 
 private:
-    DB *m_db;
+//    DB *m_db;
 
 };
 

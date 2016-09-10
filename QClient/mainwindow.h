@@ -16,6 +16,7 @@
 #include <QThread>
 #include <Label/dlabel.h>
 #include <QLineEdit>
+#include "globals.h"
 
 namespace Ui {
 class MainWindow;

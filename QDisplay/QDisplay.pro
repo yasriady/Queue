@@ -14,39 +14,25 @@ TEMPLATE = app
 
 # Ddy:
 #unix:QMAKE_RPATHDIR += /opt/Queue/QtLib /opt/Queue/QtLib/Qt5
+INCLUDEPATH += $$PWD/../SharedClass
 
 SOURCES += main.cpp \
-    ../SharedClass/BaseUi/bignodebase.cpp \
-    ../SharedClass/BaseUi/mainwindowbase.cpp \
-    ../SharedClass/BaseUi/nodebase.cpp \
     mainwindow.cpp \
     node.cpp \
     bignode.cpp \
-    displayserver.cpp \
-    ../SharedClass/db.cpp \
-    ../SharedClass/ndhelper.cpp \
-    ../SharedClass/rdhelper.cpp \
-    ../SharedClass/server.cpp \
-    RemoteDisplay/remotedisplay.cpp \
-    ../SharedClass/StatusBar/statusbarwidget.cpp \
-    ../SharedClass/callersound.cpp
+    ../SharedClass/BaseUi/bignodebase.cpp \
+    ../SharedClass/BaseUi/mainwindowbase.cpp \
+    ../SharedClass/BaseUi/nodebase.cpp \
+    ../SharedClass/StatusBar/statusbarwidget.cpp
 
 HEADERS  += \
-    ../SharedClass/BaseUi/bignodebase.h \
-    ../SharedClass/BaseUi/mainwindowbase.h \
-    ../SharedClass/BaseUi/nodebase.h \
     mainwindow.h \
     node.h \
     bignode.h \
-    displayserver.h \
-    ../SharedClass/config.h \
-    ../SharedClass/db.h \
-    ../SharedClass/ndhelper.h \
-    ../SharedClass/rdhelper.h \
-    ../SharedClass/server.h \
-    RemoteDisplay/remotedisplay.h \
-    ../SharedClass/StatusBar/statusbarwidget.h \
-    ../SharedClass/callersound.h
+    ../SharedClass/BaseUi/bignodebase.h \
+    ../SharedClass/BaseUi/mainwindowbase.h \
+    ../SharedClass/BaseUi/nodebase.h \
+    ../SharedClass/StatusBar/statusbarwidget.h
 
 FORMS    += \
     ../SharedClass/BaseUi/bignodebase.ui \
@@ -74,6 +60,13 @@ else:unix:!macx: LIBS += -L$$OUT_PWD/../../QtLib/QtDB/ -lQtDB
 
 INCLUDEPATH += $$PWD/../../QtLib/QtDB
 DEPENDPATH += $$PWD/../../QtLib/QtDB
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../QProcess/release/ -lQProcess
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../QProcess/debug/ -lQProcess
+else:unix:!macx: LIBS += -L$$OUT_PWD/../QProcess/ -lQProcess
+
+INCLUDEPATH += $$PWD/../QProcess
+DEPENDPATH += $$PWD/../QProcess
 
 unix:!macx: LIBS += -lasound
 
@@ -105,3 +98,11 @@ DISTFILES += \
     Extra/qss/QDisplay_Node_CALL.qss \
     Extra/qss/QDisplay_Node_INIT.qss \
     Extra/qss/QDisplay_Node.qss
+
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../QLibGUI/release/ -lQLibGUI
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../QLibGUI/debug/ -lQLibGUI
+else:unix:!macx: LIBS += -L$$OUT_PWD/../QLibGUI/ -lQLibGUI
+
+INCLUDEPATH += $$PWD/../QLibGUI
+DEPENDPATH += $$PWD/../QLibGUI

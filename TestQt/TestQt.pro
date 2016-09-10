@@ -16,14 +16,20 @@ unix:QMAKE_RPATHDIR += /opt/Queue/QtLib /opt/Queue/QtLib/Qt5
 SOURCES +=\
         mainwindow.cpp \
     TypingArea/typingarea.cpp \
-    main.cpp
+    main.cpp \
+    form.cpp \
+    dialog.cpp
 
 HEADERS  += mainwindow.h \
     TypingArea/typingarea.h \
-    TypingArea/main.cp_
+    TypingArea/main.cp_ \
+    form.h \
+    dialog.h
 
-FORMS    += mainwindow.ui
-
+FORMS    += mainwindow.ui \
+    form.ui \
+    dialog.ui
+y
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtDB/release/ -lQtDB
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../../QtLib/QtDB/debug/ -lQtDB
@@ -45,6 +51,14 @@ else:unix:!macx: LIBS += -L$$OUT_PWD/../../QtLib/QtConfig/ -lQtConfig
 
 INCLUDEPATH += $$PWD/../../QtLib/QtConfig
 DEPENDPATH += $$PWD/../../QtLib/QtConfig
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../QProcess/release/ -lQProcess
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../QProcess/debug/ -lQProcess
+else:unix:!macx: LIBS += -L$$OUT_PWD/../QProcess/ -lQProcess
+
+INCLUDEPATH += $$PWD/../QProcess
+DEPENDPATH += $$PWD/../QProcess
+
 
 DISTFILES += \
     Button.qml \

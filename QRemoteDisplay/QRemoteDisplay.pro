@@ -22,12 +22,8 @@ SOURCES += main.cpp\
     ../SharedClass/BaseUi/nodebase.cpp \
     bignode.cpp \
     node.cpp \
-    ../SharedClass/db.cpp \
-    ../SharedClass/ndhelper.cpp \
     displayclient.cpp \
-    ../SharedClass/socket.cpp \
-    ../SharedClass/StatusBar/statusbarwidget.cpp \
-    ../SharedClass/callersound.cpp
+    ../SharedClass/StatusBar/statusbarwidget.cpp
 
 HEADERS  += mainwindow.h \
     ../SharedClass/BaseUi/bignodebase.h \
@@ -35,13 +31,8 @@ HEADERS  += mainwindow.h \
     ../SharedClass/BaseUi/nodebase.h \
     bignode.h \
     node.h \
-    ../SharedClass/db.h \
-    ../SharedClass/ndhelper.h \
     displayclient.h \
-    ../SharedClass/config.h \
-    ../SharedClass/socket.h \
-    ../SharedClass/StatusBar/statusbarwidget.h \
-    ../SharedClass/callersound.h
+    ../SharedClass/StatusBar/statusbarwidget.h
 
 FORMS    += mainwindow.ui \
     ../SharedClass/BaseUi/bignodebase.ui \
@@ -71,6 +62,13 @@ INCLUDEPATH += $$PWD/../../QtLib/QtDB
 DEPENDPATH += $$PWD/../../QtLib/QtDB
 
 unix:!macx: LIBS += -lasound
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../QProcess/release/ -lQProcess
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../QProcess/debug/ -lQProcess
+else:unix:!macx: LIBS += -L$$OUT_PWD/../QProcess/ -lQProcess
+
+INCLUDEPATH += $$PWD/../QProcess
+DEPENDPATH += $$PWD/../QProcess
 
 DISTFILES += \
     Extra/QRemoteDisplay.ini \

@@ -6,6 +6,7 @@
 #include <Inc/CallerSoundAlsa>
 #include <CallerSoundAlsa/wavfile.h>
 #include <Inc/DBManager>
+#include "form.h"
 
 namespace Ui {
 class MainWindow;
@@ -47,9 +48,11 @@ private Q_SLOTS:
 
     void on_pushButton_9_clicked();
 
-protected:
-    virtual void customInit();
+//protected:
+    //virtual void customInit();
 
+    void on_pushButton_10_clicked();
+    void on_pushButton_11_clicked();
 };
 
 #endif // MAINWINDOW_H

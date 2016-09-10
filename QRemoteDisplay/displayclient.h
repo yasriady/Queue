@@ -2,14 +2,15 @@
 #define DISPLAYCLIENT_H
 
 #include <QObject>
-#include "../SharedClass/socket.h"
-#include "../SharedClass/config.h"
-#include <Inc/Setting>
-#include "../SharedClass/ndhelper.h"
-#include "../SharedClass/StatusBar/statusbarwidget.h"
+#include "socket.h"
+#include "config.h"
+//#include <Inc/Setting>
+#include "globals.h"
+#include "ndhelper.h"
+#include "StatusBar/statusbarwidget.h"
 #include "node.h"
 #include "bignode.h"
-#include "../SharedClass/callersound.h"
+#include "callersound.h"
 
 class DisplayClient : public QObject
 {
@@ -40,7 +41,11 @@ private:
     Node* m_node;
     BigNode* m_bigNode;
     CallerSound *m_callerSound;
+    int m_timerId, m_timerInverval;
+    void startMyTimer();
 
+protected:
+    virtual void timerEvent(QTimerEvent *event);
 
 };
 

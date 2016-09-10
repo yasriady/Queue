@@ -3,7 +3,7 @@
 RemoteDisplay::RemoteDisplay(QObject *parent) : QObject(parent)
 {
     m_tcpServer = new Server(this);
-    mkCONFIG;
+    //mkCONFIG;
     if( !m_tcpServer->listen(QHostAddress::AnyIPv4, REMOTEDISPLAYPORT) )
     {
         //slotLogger("server listen error!");
@@ -26,7 +26,9 @@ void RemoteDisplay::slotNewConnection()
     m_clientList[client] = client;
     connect( client, SIGNAL(disconnected()), this, SLOT(slotSocketDisconnected()) );
     //qDebug() << "Jumlah client: " << m_clientList.size();
-    m_statusBarWidget->setLabel1( QString("Remote: %1").arg(m_clientList.size()) );
+    //m_statusBarWidget->setLabel1( QString("Remote: %1").arg(m_clientList.size()) );
+    QString string = QString("Remote: %1").arg(m_clientList.size());
+    emit signalConnectionInfo(string);
 }
 
 void RemoteDisplay::slotSocketError(QAbstractSocket::SocketError error)
@@ -40,7 +42,9 @@ void RemoteDisplay::slotSocketDisconnected()
     disconnect( client, SIGNAL(disconnected()) );
     m_clientList.remove(client);
     //qDebug() << "Jumlah client: " << m_clientList.size();
-    m_statusBarWidget->setLabel1( QString("Remote: %1").arg(m_clientList.size()) );
+    //m_statusBarWidget->setLabel1( QString("Remote: %1").arg(m_clientList.size()) );
+    QString string = QString("Remote: %1").arg(m_clientList.size());
+    emit signalConnectionInfo(string);
 }
 
 void RemoteDisplay::send(const NDHelper &dt)
